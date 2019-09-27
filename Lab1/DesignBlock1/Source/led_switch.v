@@ -1,11 +1,11 @@
-module led_switch(led, switch, key0);
-    input [7:0] switch;
-    input key0;
-    output reg [7:0] led;
-    always @ (switch[7:0], key0)
+module led_switch(LEDR, SW, KEY[0]);
+    input [7:0] SW;
+    input KEY[0];
+    output reg [7:0] LEDR;
+    always @ (SW[7:0], KEY[0])
         begin
-          led[7:0]=switch[7:0];
-          if (key0)
-            led[7:0]=~switch[7:0];
+          LEDR[7:0]=~SW[7:0];
+          if (KEY[0])
+            LEDR[7:0]=SW[7:0];
         end
 endmodule

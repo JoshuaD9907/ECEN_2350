@@ -1,0 +1,55 @@
+|Design1_top
+LEDR[0] << led_switch:U0.port0
+LEDR[1] << led_switch:U0.port0
+LEDR[2] << led_switch:U0.port0
+LEDR[3] << led_switch:U0.port0
+LEDR[4] << led_switch:U0.port0
+LEDR[5] << led_switch:U0.port0
+LEDR[6] << led_switch:U0.port0
+LEDR[7] << led_switch:U0.port0
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+KEY_port_expr0_index0 => KEY[0].IN1
+
+
+|Design1_top|led_switch:U0
+LEDR[0] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+SW[0] => LEDR.DATAB
+SW[0] => LEDR.DATAA
+SW[1] => LEDR.DATAB
+SW[1] => LEDR.DATAA
+SW[2] => LEDR.DATAB
+SW[2] => LEDR.DATAA
+SW[3] => LEDR.DATAB
+SW[3] => LEDR.DATAA
+SW[4] => LEDR.DATAB
+SW[4] => LEDR.DATAA
+SW[5] => LEDR.DATAB
+SW[5] => LEDR.DATAA
+SW[6] => LEDR.DATAB
+SW[6] => LEDR.DATAA
+SW[7] => LEDR.DATAB
+SW[7] => LEDR.DATAA
+KEY_port_expr0_index0 => LEDR.OUTPUTSELECT
+KEY_port_expr0_index0 => LEDR.OUTPUTSELECT
+KEY_port_expr0_index0 => LEDR.OUTPUTSELECT
+KEY_port_expr0_index0 => LEDR.OUTPUTSELECT
+KEY_port_expr0_index0 => LEDR.OUTPUTSELECT
+KEY_port_expr0_index0 => LEDR.OUTPUTSELECT
+KEY_port_expr0_index0 => LEDR.OUTPUTSELECT
+KEY_port_expr0_index0 => LEDR.OUTPUTSELECT
+
+

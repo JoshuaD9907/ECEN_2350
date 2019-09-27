@@ -1,4 +1,4 @@
-module top(LEDR[7:0], SW, KEY[0]);
+module Design1_top(LEDR[7:0], SW, KEY[0]);
     input [7:0] SW;
     input [1:0] KEY;
     output [7:0] LEDR;

@@ -1,6 +1,6 @@
-module led_switch(LEDR, SW, KEY[0]);
+module led_switch(LEDR[7:0], SW, KEY[0]);
     input [7:0] SW;
-    input KEY[0];
+    input [1:0] KEY;
     output reg [7:0] LEDR;
     always @ (SW[7:0], KEY[0])
         begin

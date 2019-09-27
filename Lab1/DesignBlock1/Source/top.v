@@ -1,6 +1,6 @@
-module top(LEDR, SW, KEY[0]);
+module top(LEDR[7:0], SW, KEY[0]);
     input [7:0] SW;
-    input KEY[0];
+    input [1:0] KEY;
     output [7:0] LEDR;
 
     led_switch U0 (LEDR, SW, KEY[0]);

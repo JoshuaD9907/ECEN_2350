@@ -1,15 +1,15 @@
-module sevenseg (display, KEY);
-input [1:0] KEY;
-output [7:0] display;
-parameter bday1= 24'h030200;
-parameter bday2= 24'h081429;
-parameter data[3:0];
-always @ (KEY[1])
+module sevenseg (data, display);
+input [3:0] data;
+output reg [7:0] display;
+//parameter bday1= 24'h030200;
+//parameter bday2= 24'h081429;
+//parameter data[3:0];
+/*always @ (KEY[1])
    begin
-   data=bday1;
+   assign data=bday1;
    if(KEY[1])
-   data=bday2;
-   end
+   assign data=bday2;
+   end*/
 always @ (data)
    begin
       case(data)

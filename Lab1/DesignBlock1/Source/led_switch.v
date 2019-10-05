@@ -1,4 +1,4 @@
-module led_switch(LEDR[7:0], SW, KEY[0]);
+module led_switch(LEDR, SW, KEY);
     input [7:0] SW;
     input [1:0] KEY;
     output reg [7:0] LEDR;

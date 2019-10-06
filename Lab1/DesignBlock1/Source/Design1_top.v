@@ -21,7 +21,7 @@ module Design1_top(LEDR[7:0], SW[7:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0]
             bday[3:0]=bday2[3:0];
         end*/
     led_switch U0 (LEDR, SW, KEY);
-    sevensegcall U1 (HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, KEY[1]);
+    sevensegcall U1 (HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, KEY);
     //sevenseg U1 (bday, HEX5);
 
 endmodule

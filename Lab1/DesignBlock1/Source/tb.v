@@ -6,8 +6,12 @@ module tb();
   reg [7:0] SWITCH;
   reg [1:0] KEY;
 
-  reg [3:0] data;
-  wire [7:0] display;
+  wire [7:0] HEX0;
+  wire [7:0] HEX1;
+  wire [7:0] HEX2;
+  wire [7:0] HEX3;
+  wire [7:0] HEX4;
+  wire [7:0] HEX5;
 
 led_switch led_switch_inst(
 	.LEDR(LEDR) ,	// output [7:0] LEDR_sig
@@ -15,9 +19,14 @@ led_switch led_switch_inst(
 	.KEY(KEY) 	// input [1:0] KEY_sig
 );
 
-sevenseg sevenseg_inst(
-	.data(data) ,	// input [3:0] data_sig
-	.display(display) 	// output [7:0] display_sig
+sevensegcall sevensegcall_inst(
+	.KEY(KEY) ,	
+	.HEX0(HEX0) ,
+  .HEX1(HEX1) ,
+  .HEX2(HEX2) ,
+  .HEX3(HEX3) ,
+  .HEX4(HEX4) ,
+  .HEX5(HEX5)
 );
 
 	initial
@@ -35,13 +44,24 @@ sevenseg sevenseg_inst(
         assign SWITCH[7:0] = 8'b0110_1010;
         #10	$display("%b", LEDR);
 	    #10	$display("Ending led switch imulation.");
+      $display("--------------------------------------------------");
       $display("Starting sevenseg simulation");
-      $display("bday 1");
-      //#10 assign data =24'h030200;
-      //$display("%b", display);
-      $display("bday 2");
-      //#10 assign data =24'h090621;
-      //$display("%b", display);
+        $display("bday 1");
+        #10 assign KEY[1] = 1'b0;
+        #10 $display("%b", HEX5);
+        #10 $display("%b", HEX4);
+        #10 $display("%b", HEX3);
+        #10 $display("%b", HEX2);
+        #10 $display("%b", HEX1);
+        #10 $display("%b", HEX0);
+        $display("bday 2");
+        #10 assign KEY[1] = 1'b1;
+        #10 $display("%b", HEX5);
+        #10 $display("%b", HEX4);
+        #10 $display("%b", HEX3);
+        #10 $display("%b", HEX2);
+        #10 $display("%b", HEX1);
+        #10 $display("%b", HEX0);
       #10	$display("Ending sevenseg simulation.");
 			$finish;
 	  end

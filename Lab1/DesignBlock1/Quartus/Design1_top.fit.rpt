@@ -1,5 +1,5 @@
 Fitter report for Design1_top
-Sun Oct 06 13:57:22 2019
+Sun Oct 06 14:32:09 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Oct 06 13:57:22 2019       ;
+; Fitter Status                      ; Successful - Sun Oct 06 14:32:09 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Design1_top                                 ;
 ; Top-level Entity Name              ; Design1_top                                 ;
@@ -1492,8 +1492,8 @@ Warning (169177): 10 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 
 Info (144001): Generated suppressed messages file C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 20 warnings
     Info: Peak virtual memory: 5653 megabytes
-    Info: Processing ended: Sun Oct 06 13:57:23 2019
-    Info: Elapsed time: 00:00:11
+    Info: Processing ended: Sun Oct 06 14:32:09 2019
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:14
 
 

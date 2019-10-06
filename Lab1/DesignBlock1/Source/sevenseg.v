@@ -1,5 +1,5 @@
 module sevenseg (data, display);
-input [3:0] data;
+input [31:0] data;
 output reg [7:0] display;
 //parameter bday1= 24'h030200;
 //parameter bday2= 24'h081429;

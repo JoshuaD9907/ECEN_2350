@@ -1,5 +1,5 @@
 $date
-	Sat Oct 05 21:43:09 2019
+	Sun Oct 06 13:11:03 2019
 $end
 $version
 	Icarus Verilog
@@ -8,71 +8,123 @@ $timescale
 	100ps
 $end
 $scope module Design1_top $end
-$var wire 8 ! HEX0 [7:0] $end
-$var wire 8 " HEX1 [7:0] $end
-$var wire 8 # HEX2 [7:0] $end
-$var wire 8 $ HEX3 [7:0] $end
-$var wire 8 % HEX4 [7:0] $end
+$var wire 2 ! KEY [1:0] $end
+$var wire 8 " SW [7:0] $end
+$var wire 4 # bday1 [3:0] $end
+$var wire 4 $ bday2 [3:0] $end
+$var wire 8 % LEDR [7:0] $end
 $var wire 8 & HEX5 [7:0] $end
-$var wire 2 ' KEY [1:0] $end
-$var wire 8 ( SW [7:0] $end
-$var wire 4 ) bday1 [3:0] $end
-$var wire 4 * bday2 [3:0] $end
-$var wire 8 + LEDR [7:0] $end
+$var wire 8 ' HEX4 [7:0] $end
+$var wire 8 ( HEX3 [7:0] $end
+$var wire 8 ) HEX2 [7:0] $end
+$var wire 8 * HEX1 [7:0] $end
+$var wire 8 + HEX0 [7:0] $end
+$var reg 4 , bday [3:0] $end
 $scope module U0 $end
-$var wire 2 , KEY [1:0] $end
-$var wire 8 - SW [7:0] $end
-$var reg 8 . LEDR [7:0] $end
+$var wire 2 - KEY [1:0] $end
+$var wire 8 . SW [7:0] $end
+$var reg 8 / LEDR [7:0] $end
 $upscope $end
+$scope module U1 $end
+$var wire 4 0 data [3:0] $end
+$var reg 8 1 display [7:0] $end
 $upscope $end
-$scope module sevenseg $end
-$var wire 4 / data [3:0] $end
-$var reg 8 0 display [7:0] $end
+$scope module U2 $end
+$var wire 4 2 data [3:0] $end
+$var reg 8 3 display [7:0] $end
+$upscope $end
+$scope module U3 $end
+$var wire 4 4 data [3:0] $end
+$var reg 8 5 display [7:0] $end
+$upscope $end
+$scope module U4 $end
+$var wire 4 6 data [3:0] $end
+$var reg 8 7 display [7:0] $end
+$upscope $end
+$scope module U5 $end
+$var wire 4 8 data [3:0] $end
+$var reg 8 9 display [7:0] $end
+$upscope $end
+$scope module U6 $end
+$var wire 4 : data [3:0] $end
+$var reg 8 ; display [7:0] $end
+$upscope $end
 $upscope $end
 $scope module tb $end
-$var wire 8 1 LEDR [7:0] $end
-$var reg 2 2 KEY [1:0] $end
-$var reg 8 3 SWITCH [7:0] $end
+$var wire 8 < display [7:0] $end
+$var wire 8 = LEDR [7:0] $end
+$var reg 2 > KEY [1:0] $end
+$var reg 8 ? SWITCH [7:0] $end
+$var reg 4 @ data [3:0] $end
 $scope module led_switch_inst $end
-$var wire 2 4 KEY [1:0] $end
-$var wire 8 5 SW [7:0] $end
-$var reg 8 6 LEDR [7:0] $end
+$var wire 2 A KEY [1:0] $end
+$var wire 8 B SW [7:0] $end
+$var reg 8 C LEDR [7:0] $end
+$upscope $end
+$scope module sevenseg_inst $end
+$var wire 4 D data [3:0] $end
+$var reg 8 E display [7:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b11111111 6
-b0 5
-bx 4
-b0 3
-bx 2
-b11111111 1
-b11000000 0
-bz /
-bx .
+bx E
+bx D
+b11111111 C
+b0 B
+bx A
+bx @
+b0 ?
+bx >
+b11111111 =
+bx <
+b11000000 ;
+b0 :
+b11000000 9
+b0 8
+b11000000 7
+b0 6
+b11000000 5
+b0 4
+b11000000 3
+b0 2
+b11000000 1
+b0 0
+bx /
+bz .
 bz -
-bz ,
-bx +
-b1 *
-b0 )
-bz (
-bz '
-bz &
-bz %
-bz $
-bz #
+b0 ,
+b11000000 +
+b11000000 *
+b11000000 )
+b11000000 (
+b11000000 '
+b11000000 &
+bx %
+b1 $
+b0 #
 bz "
 bz !
 $end
 #200
-b0 1
-b0 6
-bx1 2
-bx1 4
+b0 =
+b0 C
+bx1 >
+bx1 A
 #300
-b1101010 1
-b1101010 6
-b1101010 3
-b1101010 5
-#500
+b1101010 =
+b1101010 C
+b1101010 ?
+b1101010 B
+#600
+b11000000 <
+b11000000 E
+b0 @
+b0 D
+#700
+b11111001 <
+b11111001 E
+b1 @
+b1 D
+#800

@@ -1,0 +1,78 @@
+$date
+	Sat Oct 05 21:43:09 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module Design1_top $end
+$var wire 8 ! HEX0 [7:0] $end
+$var wire 8 " HEX1 [7:0] $end
+$var wire 8 # HEX2 [7:0] $end
+$var wire 8 $ HEX3 [7:0] $end
+$var wire 8 % HEX4 [7:0] $end
+$var wire 8 & HEX5 [7:0] $end
+$var wire 2 ' KEY [1:0] $end
+$var wire 8 ( SW [7:0] $end
+$var wire 4 ) bday1 [3:0] $end
+$var wire 4 * bday2 [3:0] $end
+$var wire 8 + LEDR [7:0] $end
+$scope module U0 $end
+$var wire 2 , KEY [1:0] $end
+$var wire 8 - SW [7:0] $end
+$var reg 8 . LEDR [7:0] $end
+$upscope $end
+$upscope $end
+$scope module sevenseg $end
+$var wire 4 / data [3:0] $end
+$var reg 8 0 display [7:0] $end
+$upscope $end
+$scope module tb $end
+$var wire 8 1 LEDR [7:0] $end
+$var reg 2 2 KEY [1:0] $end
+$var reg 8 3 SWITCH [7:0] $end
+$scope module led_switch_inst $end
+$var wire 2 4 KEY [1:0] $end
+$var wire 8 5 SW [7:0] $end
+$var reg 8 6 LEDR [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11111111 6
+b0 5
+bx 4
+b0 3
+bx 2
+b11111111 1
+b11000000 0
+bz /
+bx .
+bz -
+bz ,
+bx +
+b1 *
+b0 )
+bz (
+bz '
+bz &
+bz %
+bz $
+bz #
+bz "
+bz !
+$end
+#200
+b0 1
+b0 6
+bx1 2
+bx1 4
+#300
+b1101010 1
+b1101010 6
+b1101010 3
+b1101010 5
+#500

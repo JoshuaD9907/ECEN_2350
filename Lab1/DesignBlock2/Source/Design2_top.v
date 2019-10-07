@@ -1,5 +1,4 @@
-module Design2_top(SW[7:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], HEX2[7:0], HEX1[7:0], HEX0[7:0], sum[3:0], carry, overflow);
-    input [7:0] SW;
+module Design2_top(SW[7:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], HEX2[7:0], HEX1[7:0], HEX0[7:0], sum[3:0], carry, overflow, inputx, inputy);
     input [1:0] KEY;
     output [7:0] HEX5;
     output [7:0] HEX4;
@@ -8,18 +7,19 @@ module Design2_top(SW[7:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], HEX2[7:0]
     output [7:0] HEX1;
     output [7:0] HEX0;
     output [3:0] sum;
+    output [7:0] SW;
     output carry;
-    integer overflow=0;
+    output overflow=0;
 
-    wire [3:0] inputx;
-    wire [3:0] inputy;
-    assign inputx = SW[7:4];
+    output reg [3:0] inputx;
+    output reg [3:0] inputy;
     always @(KEY[0])
     begin
-        assign inputy = ~SW[3:0];
+        inputy[3:0] = ~SW[3:0];
+        inputx[3:0] = SW[7:4];
         if (KEY[0])
         begin
-        assign inputy = SW[3:0];
+        inputy[3:0] = SW[3:0];
         end
     end
     assign carry=~KEY[0];

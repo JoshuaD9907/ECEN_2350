@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Design2
-Sun Oct 06 22:07:40 2019
+Sun Oct 06 23:37:25 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,15 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Port Connectivity Checks: "sevensegcall2:U1|sevenseg:a5"
+  6. Port Connectivity Checks: "sevensegcall2:U1|sevenseg:a4"
+  7. Port Connectivity Checks: "sevensegcall2:U1|sevenseg:a3"
+  8. Port Connectivity Checks: "sevensegcall2:U1|sevenseg:a2"
+  9. Port Connectivity Checks: "sevensegcall2:U1|sevenseg:a1"
+ 10. Port Connectivity Checks: "sevensegcall2:U1|sevenseg:a0"
+ 11. Port Connectivity Checks: "sevensegcall2:U1"
+ 12. Port Connectivity Checks: "adder:U0"
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -36,7 +44,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Oct 06 22:07:40 2019           ;
+; Analysis & Synthesis Status        ; Failed - Sun Oct 06 23:37:25 2019           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Design2                                     ;
 ; Top-level Entity Name              ; Design2_top                                 ;
@@ -157,13 +165,87 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevensegcall2:U1|sevenseg:a5"                                                                                                                 ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; data2 ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "data2[3..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevensegcall2:U1|sevenseg:a4"                                                                                                               ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; data ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "data[3..1]" will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevensegcall2:U1|sevenseg:a3"                                                                                                                 ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; data2 ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "data2[3..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevensegcall2:U1|sevenseg:a2"                                                                                                               ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; data ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "data[3..1]" will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevensegcall2:U1|sevenseg:a1"                                                                                                                 ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; data2 ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "data2[3..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevensegcall2:U1|sevenseg:a0"                                                                                                               ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; data ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "data[3..1]" will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevensegcall2:U1"                                                                                                                               ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                        ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; input1 ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "input1[3..1]" will be connected to GND. ;
+; input2 ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "input2[3..1]" will be connected to GND. ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "adder:U0"                                                                               ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; inputx   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Oct 06 22:07:32 2019
+    Info: Processing started: Sun Oct 06 23:37:16 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Design2 -c Design2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -177,23 +259,43 @@ Info (12021): Found 1 design units, including 1 entities, in source file /digita
     Info (12023): Found entity 1: Design2_top File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /digitallogic/ecen_2350/lab1/designblock2/source/adder.v
     Info (12023): Found entity 1: adder File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/adder.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at sevensegcall2.v(73): created implicit net for "val0" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 73
+Warning (10236): Verilog HDL Implicit Net warning at sevensegcall2.v(62): created implicit net for "x" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at Design2_top.v(26): created implicit net for "carryout" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 26
 Warning (10236): Verilog HDL Implicit Net warning at Design2_top.v(27): created implicit net for "input1" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 27
 Warning (10236): Verilog HDL Implicit Net warning at Design2_top.v(27): created implicit net for "input2" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 27
-Error (10161): Verilog HDL error at sevensegcall2.v(1): object "overflow" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 1
-Error (10161): Verilog HDL error at sevensegcall2.v(13): object "overflow" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 13
-Error (10161): Verilog HDL error at sevensegcall2.v(16): object "overflow" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 16
-Error (10161): Verilog HDL error at sevensegcall2.v(47): object "overflow" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 47
-Error (10161): Verilog HDL error at sevensegcall2.v(49): object "overflow" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 49
-Error (10137): Verilog HDL Procedural Assignment error at sevensegcall2.v(52): object "val0" on left-hand side of assignment must have a variable data type File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 52
-Error (10161): Verilog HDL error at sevensegcall2.v(54): object "overflow" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 54
-Error (10137): Verilog HDL Procedural Assignment error at sevensegcall2.v(57): object "val0" on left-hand side of assignment must have a variable data type File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 57
-Error (10161): Verilog HDL error at sevensegcall2.v(59): object "overflow" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 59
-Error (10137): Verilog HDL Procedural Assignment error at sevensegcall2.v(62): object "val0" on left-hand side of assignment must have a variable data type File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 62
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 10 errors, 4 warnings
-    Error: Peak virtual memory: 4715 megabytes
-    Error: Processing ended: Sun Oct 06 22:07:40 2019
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:18
+Info (12127): Elaborating entity "Design2_top" for the top level hierarchy
+Warning (10235): Verilog HDL Always Construct warning at Design2_top.v(18): variable "SW" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 18
+Warning (10235): Verilog HDL Always Construct warning at Design2_top.v(19): variable "SW" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 19
+Warning (10235): Verilog HDL Always Construct warning at Design2_top.v(22): variable "SW" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 22
+Warning (10030): Net "SW" at Design2_top.v(10) has no driver or initial value, using a default initial value '0' File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 10
+Info (12128): Elaborating entity "adder" for hierarchy "adder:U0" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 26
+Info (12128): Elaborating entity "fullAdder" for hierarchy "adder:U0|fullAdder:add1" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/adder.v Line: 8
+Info (12128): Elaborating entity "sevensegcall2" for hierarchy "sevensegcall2:U1" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 27
+Warning (10240): Verilog HDL Always Construct warning at sevensegcall2.v(19): inferring latch(es) for variable "val5", which holds its previous value in one or more paths through the always construct File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 19
+Warning (10240): Verilog HDL Always Construct warning at sevensegcall2.v(31): inferring latch(es) for variable "val3", which holds its previous value in one or more paths through the always construct File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 31
+Warning (10240): Verilog HDL Always Construct warning at sevensegcall2.v(43): inferring latch(es) for variable "val1", which holds its previous value in one or more paths through the always construct File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 43
+Warning (10240): Verilog HDL Always Construct warning at sevensegcall2.v(43): inferring latch(es) for variable "val0", which holds its previous value in one or more paths through the always construct File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 43
+Warning (10030): Net "overflow" at sevensegcall2.v(17) has no driver or initial value, using a default initial value '0' File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 17
+Info (10041): Inferred latch for "val0[0]" at sevensegcall2.v(55) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 55
+Info (10041): Inferred latch for "val0[1]" at sevensegcall2.v(55) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 55
+Info (10041): Inferred latch for "val0[2]" at sevensegcall2.v(55) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 55
+Info (10041): Inferred latch for "val0[3]" at sevensegcall2.v(55) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 55
+Info (10041): Inferred latch for "val1[0]" at sevensegcall2.v(55) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 55
+Info (10041): Inferred latch for "val1[1]" at sevensegcall2.v(55) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 55
+Info (10041): Inferred latch for "val1[2]" at sevensegcall2.v(55) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 55
+Info (10041): Inferred latch for "val1[3]" at sevensegcall2.v(55) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 55
+Info (12128): Elaborating entity "sevenseg" for hierarchy "sevensegcall2:U1|sevenseg:a0" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 62
+Info (10264): Verilog HDL Case Statement information at sevenseg.v(27): all case item expressions in this case statement are onehot File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevenseg.v Line: 27
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "sevensegcall2:U1|x" is missing source, defaulting to GND File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 62
+Error (12014): Net "overflow", which fans out to "overflow", cannot be assigned more than one value File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 12
+    Error (12015): Net is fed by "GND"
+    Error (12015): Net is fed by "sevensegcall2:U1|overflow" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 17
+Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 17 warnings
+    Error: Peak virtual memory: 4723 megabytes
+    Error: Processing ended: Sun Oct 06 23:37:25 2019
+    Error: Elapsed time: 00:00:09
+    Error: Total CPU time (on all processors): 00:00:23
 
 

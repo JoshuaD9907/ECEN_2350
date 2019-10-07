@@ -1,4 +1,4 @@
-module fullAdder(inputx, inputy, carryin, carryout);
+module fullAdder(inputx, inputy, carryin, carryout, sum);
     input inputx, inputy, carryin;
     output carryout, sum;
 

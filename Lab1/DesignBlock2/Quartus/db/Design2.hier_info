@@ -1,0 +1,339 @@
+|Design2_top
+SW[0] <= <GND>
+SW[1] <= <GND>
+SW[2] <= <GND>
+SW[3] <= <GND>
+SW[4] <= <GND>
+SW[5] <= <GND>
+SW[6] <= <GND>
+SW[7] <= <GND>
+KEY[0] => inputy[3].IN1
+KEY[0] => inputy[2].IN1
+KEY[0] => inputy[1].IN1
+KEY[0] => inputy[0].IN1
+KEY[0] => carry.IN1
+KEY[1] => ~NO_FANOUT~
+HEX5[0] <= sevensegcall2:U1.port0
+HEX5[1] <= sevensegcall2:U1.port0
+HEX5[2] <= sevensegcall2:U1.port0
+HEX5[3] <= sevensegcall2:U1.port0
+HEX5[4] <= sevensegcall2:U1.port0
+HEX5[5] <= sevensegcall2:U1.port0
+HEX5[6] <= sevensegcall2:U1.port0
+HEX5[7] <= sevensegcall2:U1.port0
+HEX4[0] <= sevensegcall2:U1.port1
+HEX4[1] <= sevensegcall2:U1.port1
+HEX4[2] <= sevensegcall2:U1.port1
+HEX4[3] <= sevensegcall2:U1.port1
+HEX4[4] <= sevensegcall2:U1.port1
+HEX4[5] <= sevensegcall2:U1.port1
+HEX4[6] <= sevensegcall2:U1.port1
+HEX4[7] <= sevensegcall2:U1.port1
+HEX3[0] <= sevensegcall2:U1.port2
+HEX3[1] <= sevensegcall2:U1.port2
+HEX3[2] <= sevensegcall2:U1.port2
+HEX3[3] <= sevensegcall2:U1.port2
+HEX3[4] <= sevensegcall2:U1.port2
+HEX3[5] <= sevensegcall2:U1.port2
+HEX3[6] <= sevensegcall2:U1.port2
+HEX3[7] <= sevensegcall2:U1.port2
+HEX2[0] <= sevensegcall2:U1.port3
+HEX2[1] <= sevensegcall2:U1.port3
+HEX2[2] <= sevensegcall2:U1.port3
+HEX2[3] <= sevensegcall2:U1.port3
+HEX2[4] <= sevensegcall2:U1.port3
+HEX2[5] <= sevensegcall2:U1.port3
+HEX2[6] <= sevensegcall2:U1.port3
+HEX2[7] <= sevensegcall2:U1.port3
+HEX1[0] <= sevensegcall2:U1.port4
+HEX1[1] <= sevensegcall2:U1.port4
+HEX1[2] <= sevensegcall2:U1.port4
+HEX1[3] <= sevensegcall2:U1.port4
+HEX1[4] <= sevensegcall2:U1.port4
+HEX1[5] <= sevensegcall2:U1.port4
+HEX1[6] <= sevensegcall2:U1.port4
+HEX1[7] <= sevensegcall2:U1.port4
+HEX0[0] <= sevensegcall2:U1.port5
+HEX0[1] <= sevensegcall2:U1.port5
+HEX0[2] <= sevensegcall2:U1.port5
+HEX0[3] <= sevensegcall2:U1.port5
+HEX0[4] <= sevensegcall2:U1.port5
+HEX0[5] <= sevensegcall2:U1.port5
+HEX0[6] <= sevensegcall2:U1.port5
+HEX0[7] <= sevensegcall2:U1.port5
+sum[0] <= sum[0].DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= sum[1].DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= sum[2].DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= sum[3].DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+inputx[0] <= inputx[0].DB_MAX_OUTPUT_PORT_TYPE
+inputx[1] <= inputx[1].DB_MAX_OUTPUT_PORT_TYPE
+inputx[2] <= inputx[2].DB_MAX_OUTPUT_PORT_TYPE
+inputx[3] <= inputx[3].DB_MAX_OUTPUT_PORT_TYPE
+inputy[0] <= inputy[0].DB_MAX_OUTPUT_PORT_TYPE
+inputy[1] <= inputy[1].DB_MAX_OUTPUT_PORT_TYPE
+inputy[2] <= inputy[2].DB_MAX_OUTPUT_PORT_TYPE
+inputy[3] <= inputy[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Design2_top|adder:U0
+inputx[0] => inputx[0].IN1
+inputx[1] => inputx[1].IN1
+inputx[2] => inputx[2].IN1
+inputx[3] => inputx[3].IN1
+inputy[0] => inputy[0].IN1
+inputy[1] => inputy[1].IN1
+inputy[2] => inputy[2].IN1
+inputy[3] => inputy[3].IN1
+carryin => carryin.IN4
+overflow => ~NO_FANOUT~
+sum[0] <= fullAdder:add1.port4
+sum[1] <= fullAdder:add2.port4
+sum[2] <= fullAdder:add3.port4
+sum[3] <= fullAdder:add4.port4
+carryout <= carryout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Design2_top|adder:U0|fullAdder:add1
+inputx => w1.IN0
+inputx => w2.IN0
+inputx => WideXor0.IN0
+inputy => w1.IN1
+inputy => w3.IN0
+inputy => WideXor0.IN1
+carryin => w2.IN1
+carryin => w3.IN1
+carryin => WideXor0.IN2
+carryout <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+sum <= WideXor0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Design2_top|adder:U0|fullAdder:add2
+inputx => w1.IN0
+inputx => w2.IN0
+inputx => WideXor0.IN0
+inputy => w1.IN1
+inputy => w3.IN0
+inputy => WideXor0.IN1
+carryin => w2.IN1
+carryin => w3.IN1
+carryin => WideXor0.IN2
+carryout <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+sum <= WideXor0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Design2_top|adder:U0|fullAdder:add3
+inputx => w1.IN0
+inputx => w2.IN0
+inputx => WideXor0.IN0
+inputy => w1.IN1
+inputy => w3.IN0
+inputy => WideXor0.IN1
+carryin => w2.IN1
+carryin => w3.IN1
+carryin => WideXor0.IN2
+carryout <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+sum <= WideXor0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Design2_top|adder:U0|fullAdder:add4
+inputx => w1.IN0
+inputx => w2.IN0
+inputx => WideXor0.IN0
+inputy => w1.IN1
+inputy => w3.IN0
+inputy => WideXor0.IN1
+carryin => w2.IN1
+carryin => w3.IN1
+carryin => WideXor0.IN2
+carryout <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+sum <= WideXor0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Design2_top|sevensegcall2:U1
+HEX5[0] <= sevenseg:a0.port2
+HEX5[1] <= sevenseg:a0.port2
+HEX5[2] <= sevenseg:a0.port2
+HEX5[3] <= sevenseg:a0.port2
+HEX5[4] <= sevenseg:a0.port2
+HEX5[5] <= sevenseg:a0.port2
+HEX5[6] <= sevenseg:a0.port2
+HEX5[7] <= sevenseg:a0.port2
+HEX4[0] <= sevenseg:a1.port2
+HEX4[1] <= sevenseg:a1.port2
+HEX4[2] <= sevenseg:a1.port2
+HEX4[3] <= sevenseg:a1.port2
+HEX4[4] <= sevenseg:a1.port2
+HEX4[5] <= sevenseg:a1.port2
+HEX4[6] <= sevenseg:a1.port2
+HEX4[7] <= sevenseg:a1.port2
+HEX3[0] <= sevenseg:a2.port2
+HEX3[1] <= sevenseg:a2.port2
+HEX3[2] <= sevenseg:a2.port2
+HEX3[3] <= sevenseg:a2.port2
+HEX3[4] <= sevenseg:a2.port2
+HEX3[5] <= sevenseg:a2.port2
+HEX3[6] <= sevenseg:a2.port2
+HEX3[7] <= sevenseg:a2.port2
+HEX2[0] <= sevenseg:a3.port2
+HEX2[1] <= sevenseg:a3.port2
+HEX2[2] <= sevenseg:a3.port2
+HEX2[3] <= sevenseg:a3.port2
+HEX2[4] <= sevenseg:a3.port2
+HEX2[5] <= sevenseg:a3.port2
+HEX2[6] <= sevenseg:a3.port2
+HEX2[7] <= sevenseg:a3.port2
+HEX1[0] <= sevenseg:a4.port2
+HEX1[1] <= sevenseg:a4.port2
+HEX1[2] <= sevenseg:a4.port2
+HEX1[3] <= sevenseg:a4.port2
+HEX1[4] <= sevenseg:a4.port2
+HEX1[5] <= sevenseg:a4.port2
+HEX1[6] <= sevenseg:a4.port2
+HEX1[7] <= sevenseg:a4.port2
+HEX0[0] <= sevenseg:a5.port2
+HEX0[1] <= sevenseg:a5.port2
+HEX0[2] <= sevenseg:a5.port2
+HEX0[3] <= sevenseg:a5.port2
+HEX0[4] <= sevenseg:a5.port2
+HEX0[5] <= sevenseg:a5.port2
+HEX0[6] <= sevenseg:a5.port2
+HEX0[7] <= sevenseg:a5.port2
+input1[0] => ~NO_FANOUT~
+input1[1] => ~NO_FANOUT~
+input1[2] => ~NO_FANOUT~
+input1[3] => val5.OUTPUTSELECT
+input1[3] => val5.OUTPUTSELECT
+input2[0] => ~NO_FANOUT~
+input2[1] => ~NO_FANOUT~
+input2[2] => ~NO_FANOUT~
+input2[3] => val3.OUTPUTSELECT
+input2[3] => val3.OUTPUTSELECT
+sum[0] => val0[0].DATAB
+sum[0] => val0[0].DATAB
+sum[1] => val0[1].DATAB
+sum[1] => val0[1].DATAB
+sum[2] => val0[2].DATAB
+sum[2] => val0[2].DATAB
+sum[3] => always2.IN1
+sum[3] => val0[3].DATAB
+sum[3] => val0[3].DATAB
+sum[3] => always2.IN1
+overflow <= <GND>
+
+
+|Design2_top|sevensegcall2:U1|sevenseg:a0
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data2[0] => Decoder0.IN3
+data2[1] => Decoder0.IN2
+data2[2] => Decoder0.IN1
+data2[3] => Decoder0.IN0
+display[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= <VCC>
+display[2] <= <VCC>
+display[3] <= <VCC>
+display[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Design2_top|sevensegcall2:U1|sevenseg:a1
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data2[0] => Decoder0.IN3
+data2[1] => Decoder0.IN2
+data2[2] => Decoder0.IN1
+data2[3] => Decoder0.IN0
+display[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= <VCC>
+display[2] <= <VCC>
+display[3] <= <VCC>
+display[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Design2_top|sevensegcall2:U1|sevenseg:a2
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data2[0] => Decoder0.IN3
+data2[1] => Decoder0.IN2
+data2[2] => Decoder0.IN1
+data2[3] => Decoder0.IN0
+display[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= <VCC>
+display[2] <= <VCC>
+display[3] <= <VCC>
+display[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Design2_top|sevensegcall2:U1|sevenseg:a3
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data2[0] => Decoder0.IN3
+data2[1] => Decoder0.IN2
+data2[2] => Decoder0.IN1
+data2[3] => Decoder0.IN0
+display[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= <VCC>
+display[2] <= <VCC>
+display[3] <= <VCC>
+display[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Design2_top|sevensegcall2:U1|sevenseg:a4
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data2[0] => Decoder0.IN3
+data2[1] => Decoder0.IN2
+data2[2] => Decoder0.IN1
+data2[3] => Decoder0.IN0
+display[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= <VCC>
+display[2] <= <VCC>
+display[3] <= <VCC>
+display[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Design2_top|sevensegcall2:U1|sevenseg:a5
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data2[0] => Decoder0.IN3
+data2[1] => Decoder0.IN2
+data2[2] => Decoder0.IN1
+data2[3] => Decoder0.IN0
+display[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= <VCC>
+display[2] <= <VCC>
+display[3] <= <VCC>
+display[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab1_top
-Mon Oct 07 13:03:37 2019
+Mon Oct 07 14:12:03 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -19,15 +19,16 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  11. Port Connectivity Checks: "Design3_top:u2|sevensegcall3:U0|sevenseg3:a2"
  12. Port Connectivity Checks: "Design3_top:u2|sevensegcall3:U0|sevenseg3:a0"
  13. Port Connectivity Checks: "Design3_top:u2"
- 14. Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a5"
- 15. Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a4"
- 16. Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a3"
- 17. Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a2"
- 18. Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a1"
- 19. Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a0"
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+ 14. Port Connectivity Checks: "Design2_top:u1"
+ 15. Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a5"
+ 16. Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a4"
+ 17. Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a3"
+ 18. Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a2"
+ 19. Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a1"
+ 20. Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a0"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
 
 
 
@@ -53,13 +54,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 07 13:03:37 2019       ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 07 14:12:03 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab1_top                                    ;
 ; Top-level Entity Name              ; Lab1_top                                    ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 186                                         ;
-;     Total combinational functions  ; 186                                         ;
+; Total logic elements               ; 185                                         ;
+;     Total combinational functions  ; 185                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 88                                          ;
@@ -199,16 +200,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 186         ;
+; Estimated Total logic elements              ; 185         ;
 ;                                             ;             ;
-; Total combinational functions               ; 186         ;
+; Total combinational functions               ; 185         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 128         ;
-;     -- 3 input functions                    ; 42          ;
+;     -- 4 input functions                    ; 129         ;
+;     -- 3 input functions                    ; 40          ;
 ;     -- <=2 input functions                  ; 16          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 186         ;
+;     -- normal mode                          ; 185         ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
 ; Total registers                             ; 0           ;
@@ -220,9 +221,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; SW[9]~input ;
-; Maximum fan-out                             ; 46          ;
-; Total fan-out                               ; 829         ;
-; Average fan-out                             ; 2.28        ;
+; Maximum fan-out                             ; 47          ;
+; Total fan-out                               ; 815         ;
+; Average fan-out                             ; 2.25        ;
 +---------------------------------------------+-------------+
 
 
@@ -231,9 +232,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                    ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------+---------------+--------------+
-; |Lab1_top                  ; 186 (70)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 88   ; 0            ; 0          ; |Lab1_top                                              ; Lab1_top      ; work         ;
-;    |Design1_top:u0|        ; 4 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design1_top:u0                               ; Design1_top   ; work         ;
-;       |led_switch:U0|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design1_top:u0|led_switch:U0                 ; led_switch    ; work         ;
+; |Lab1_top                  ; 185 (73)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 88   ; 0            ; 0          ; |Lab1_top                                              ; Lab1_top      ; work         ;
 ;    |Design2_top:u1|        ; 45 (2)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design2_top:u1                               ; Design2_top   ; work         ;
 ;       |fullAdder:U0|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design2_top:u1|fullAdder:U0                  ; fullAdder     ; work         ;
 ;       |fullAdder:U1|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design2_top:u1|fullAdder:U1                  ; fullAdder     ; work         ;
@@ -330,16 +329,25 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------+-------+----------+---------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Design3_top:u2"                                                                                            ;
-+--------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                  ;
-+--------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; input1 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; input2 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; select ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; LEDR   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+----------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Design3_top:u2"                                                                                                             ;
++--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                   ;
++--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; select ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (1 bits) it drives; bit(s) "select[3..1]" have no fanouts ;
+; select ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                       ;
++--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Design2_top:u1"                                                                       ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; input1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; input2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; input3 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------+
@@ -405,16 +413,16 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; boundary_port         ; 88                          ;
 ; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 198                         ;
-;     normal            ; 198                         ;
+; cycloneiii_lcell_comb ; 193                         ;
+;     normal            ; 193                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 11                          ;
+;         1 data inputs ; 7                           ;
 ;         2 data inputs ; 16                          ;
-;         3 data inputs ; 42                          ;
-;         4 data inputs ; 128                         ;
+;         3 data inputs ; 40                          ;
+;         4 data inputs ; 129                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 5.12                        ;
+; Average LUT depth     ; 5.21                        ;
 +-----------------------+-----------------------------+
 
 
@@ -433,7 +441,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Oct 07 13:03:21 2019
+    Info: Processing started: Mon Oct 07 14:11:47 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab1_top -c Lab1_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -465,6 +473,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
     Info (12023): Found entity 1: Design2_top File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design2_top.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /users/joshua hp/documents/github/ecen_2350/lab1/integration/source/design1_top.v
     Info (12023): Found entity 1: Design1_top File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design1_top.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at Lab1_top.v(92): created implicit net for "select" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 92
 Info (12127): Elaborating entity "Lab1_top" for the top level hierarchy
 Warning (10235): Verilog HDL Always Construct warning at Lab1_top.v(60): variable "LEDROUT" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 60
 Warning (10235): Verilog HDL Always Construct warning at Lab1_top.v(61): variable "HEX5OUT" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 61
@@ -487,7 +496,6 @@ Warning (10235): Verilog HDL Always Construct warning at Lab1_top.v(83): variabl
 Warning (10235): Verilog HDL Always Construct warning at Lab1_top.v(84): variable "HEX2OUT3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 84
 Warning (10235): Verilog HDL Always Construct warning at Lab1_top.v(85): variable "HEX1OUT3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 85
 Warning (10235): Verilog HDL Always Construct warning at Lab1_top.v(86): variable "HEX0OUT3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 86
-Warning (10030): Net "LEDROUT3[7..3]" at Lab1_top.v(40) has no driver or initial value, using a default initial value '0' File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 40
 Info (12128): Elaborating entity "Design1_top" for hierarchy "Design1_top:u0" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 90
 Info (12128): Elaborating entity "led_switch" for hierarchy "Design1_top:u0|led_switch:U0" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design1_top.v Line: 12
 Info (12128): Elaborating entity "sevensegcall" for hierarchy "Design1_top:u0|sevensegcall:U1" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design1_top.v Line: 13
@@ -731,7 +739,6 @@ Info (12128): Elaborating entity "Design3_top" for hierarchy "Design3_top:u2" Fi
 Warning (10235): Verilog HDL Always Construct warning at Design3_top.v(32): variable "unsign" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design3_top.v Line: 32
 Warning (10235): Verilog HDL Always Construct warning at Design3_top.v(33): variable "unsign" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design3_top.v Line: 33
 Warning (10235): Verilog HDL Always Construct warning at Design3_top.v(34): variable "twos" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design3_top.v Line: 34
-Warning (10136): Verilog HDL Module Declaration warning at Design3_top.v(1): port "LEDR" already exists in the list of ports File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design3_top.v Line: 1
 Info (12128): Elaborating entity "sevensegcall3" for hierarchy "Design3_top:u2|sevensegcall3:U0" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design3_top.v Line: 38
 Warning (10240): Verilog HDL Always Construct warning at sevensegcall3.v(29): inferring latch(es) for variable "compare1", which holds its previous value in one or more paths through the always construct File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall3.v Line: 29
 Warning (10240): Verilog HDL Always Construct warning at sevensegcall3.v(29): inferring latch(es) for variable "compare2", which holds its previous value in one or more paths through the always construct File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall3.v Line: 29
@@ -794,14 +801,27 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 274 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 75 output pins
+Warning (21074): Design contains 12 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "input1[0]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 14
+    Warning (15610): No output dependent on input pin "input1[1]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 14
+    Warning (15610): No output dependent on input pin "input1[2]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 14
+    Warning (15610): No output dependent on input pin "input1[3]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 14
+    Warning (15610): No output dependent on input pin "input2[0]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 15
+    Warning (15610): No output dependent on input pin "input2[1]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 15
+    Warning (15610): No output dependent on input pin "input2[2]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 15
+    Warning (15610): No output dependent on input pin "input2[3]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 15
+    Warning (15610): No output dependent on input pin "input3[0]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 16
+    Warning (15610): No output dependent on input pin "input3[1]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 16
+    Warning (15610): No output dependent on input pin "input3[2]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 16
+    Warning (15610): No output dependent on input pin "input3[3]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 16
+Info (21057): Implemented 273 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 24 input pins
+    Info (21059): Implemented 63 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 186 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 79 warnings
-    Info: Peak virtual memory: 4775 megabytes
-    Info: Processing ended: Mon Oct 07 13:03:37 2019
+    Info (21061): Implemented 185 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 91 warnings
+    Info: Peak virtual memory: 4776 megabytes
+    Info: Processing ended: Mon Oct 07 14:12:03 2019
     Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:32
 

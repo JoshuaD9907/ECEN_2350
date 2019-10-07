@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Design2
-Sun Oct 06 19:18:36 2019
+Sun Oct 06 22:07:40 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Oct 06 19:18:36 2019           ;
+; Analysis & Synthesis Status        ; Failed - Sun Oct 06 22:07:40 2019           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Design2                                     ;
 ; Top-level Entity Name              ; Design2_top                                 ;
@@ -163,7 +163,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Oct 06 19:18:28 2019
+    Info: Processing started: Sun Oct 06 22:07:32 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Design2 -c Design2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -173,16 +173,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file /digita
     Info (12023): Found entity 1: sevenseg File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevenseg.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /digitallogic/ecen_2350/lab1/designblock2/source/fulladder.v
     Info (12023): Found entity 1: fullAdder File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/fullAdder.v Line: 1
-Error (10170): Verilog HDL syntax error at Design2_top.v(16) near text: "if";  expecting "endmodule". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 16
-Error (10170): Verilog HDL syntax error at Design2_top.v(16) near text: ")";  expecting ".", or an identifier. Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 16
-Error (10170): Verilog HDL syntax error at Design2_top.v(18) near text: "end"; "end" without "begin" . Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 18
-Error (10112): Ignored design unit "Design2_top" at Design2_top.v(1) due to previous errors File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file /digitallogic/ecen_2350/lab1/designblock2/source/design2_top.v
+Info (12021): Found 1 design units, including 1 entities, in source file /digitallogic/ecen_2350/lab1/designblock2/source/design2_top.v
+    Info (12023): Found entity 1: Design2_top File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /digitallogic/ecen_2350/lab1/designblock2/source/adder.v
     Info (12023): Found entity 1: adder File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/adder.v Line: 1
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 4 errors, 1 warning
+Warning (10236): Verilog HDL Implicit Net warning at sevensegcall2.v(73): created implicit net for "val0" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 73
+Warning (10236): Verilog HDL Implicit Net warning at Design2_top.v(27): created implicit net for "input1" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at Design2_top.v(27): created implicit net for "input2" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 27
+Error (10161): Verilog HDL error at sevensegcall2.v(1): object "overflow" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 1
+Error (10161): Verilog HDL error at sevensegcall2.v(13): object "overflow" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 13
+Error (10161): Verilog HDL error at sevensegcall2.v(16): object "overflow" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 16
+Error (10161): Verilog HDL error at sevensegcall2.v(47): object "overflow" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 47
+Error (10161): Verilog HDL error at sevensegcall2.v(49): object "overflow" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 49
+Error (10137): Verilog HDL Procedural Assignment error at sevensegcall2.v(52): object "val0" on left-hand side of assignment must have a variable data type File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 52
+Error (10161): Verilog HDL error at sevensegcall2.v(54): object "overflow" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 54
+Error (10137): Verilog HDL Procedural Assignment error at sevensegcall2.v(57): object "val0" on left-hand side of assignment must have a variable data type File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 57
+Error (10161): Verilog HDL error at sevensegcall2.v(59): object "overflow" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 59
+Error (10137): Verilog HDL Procedural Assignment error at sevensegcall2.v(62): object "val0" on left-hand side of assignment must have a variable data type File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 62
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 10 errors, 4 warnings
     Error: Peak virtual memory: 4715 megabytes
-    Error: Processing ended: Sun Oct 06 19:18:36 2019
+    Error: Processing ended: Sun Oct 06 22:07:40 2019
     Error: Elapsed time: 00:00:08
     Error: Total CPU time (on all processors): 00:00:18
 

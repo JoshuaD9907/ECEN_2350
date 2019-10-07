@@ -1,4 +1,4 @@
-module Design2_top(SW[7:0], LEDR[7:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], HEX2[7:0], HEX1[7:0], HEX0[7:0], sum[3:0], carryout, overflow, input1[3:0], input2[3:0], input3[3:0]);
+module Design2_top(SW[7:0], LEDR[7:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], HEX2[7:0], HEX1[7:0], HEX0[7:0], sum, carryout, overflow, input1, input2, input3);
     input [1:0] KEY;
     output reg [7:0] LEDR;
     output [7:0] HEX5;

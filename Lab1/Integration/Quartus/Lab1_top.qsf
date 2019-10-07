@@ -191,6 +191,8 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[7]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[8]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[9]
 set_global_assignment -name VERILOG_FILE ../Source/sevensegcall3.v
+set_global_assignment -name VERILOG_FILE ../Lab1_top.v
+set_global_assignment -name SDC_FILE Lab1_top.sdc
 set_global_assignment -name VERILOG_FILE ../Source/sevensegcall2.v
 set_global_assignment -name VERILOG_FILE ../Source/sevensegcall.v
 set_global_assignment -name VERILOG_FILE ../Source/sevenseg3.v

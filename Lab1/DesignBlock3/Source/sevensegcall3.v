@@ -50,10 +50,10 @@ module sevensegcall3 (HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, KEY);
             end
         end
 
-    sevenseg a0(bday1, HEX5);
-    sevenseg a1(bday2, HEX4);
-    sevenseg a2(bday3, HEX3);
-    sevenseg a3(bday4, HEX2);
-    sevenseg a4(bday5, HEX1);
-    sevenseg a5(bday6, HEX0);
+    sevenseg3 a0(bday1, HEX5);
+    sevenseg3 a1(bday2, HEX4);
+    sevenseg3 a2(bday3, HEX3);
+    sevenseg3 a3(bday4, HEX2);
+    sevenseg3 a4(bday5, HEX1);
+    sevenseg3 a5(bday6, HEX0);
 endmodule

@@ -140,43 +140,59 @@
 					"strict" : false
 				},
 				{
-					"name" : "carryout",
-					"strict" : false
-				},
-				{
 					"name" : "overflow",
 					"strict" : false
 				},
 				{
-					"name" : "inputx[0]",
+					"name" : "input1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "inputx[1]",
+					"name" : "input1[1]",
 					"strict" : false
 				},
 				{
-					"name" : "inputx[2]",
+					"name" : "input1[2]",
 					"strict" : false
 				},
 				{
-					"name" : "inputx[3]",
+					"name" : "input1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "inputy[0]",
+					"name" : "input2[0]",
 					"strict" : false
 				},
 				{
-					"name" : "inputy[1]",
+					"name" : "input2[1]",
 					"strict" : false
 				},
 				{
-					"name" : "inputy[2]",
+					"name" : "input2[2]",
 					"strict" : false
 				},
 				{
-					"name" : "inputy[3]",
+					"name" : "input2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "input3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "carryout",
 					"strict" : false
 				},
 				{
@@ -200,10 +216,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY[0]",
-					"strict" : false
-				},
-				{
 					"name" : "SW[0]",
 					"strict" : false
 				},
@@ -216,7 +228,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "carryin",
+					"name" : "KEY[0]",
 					"strict" : false
 				}
 			]

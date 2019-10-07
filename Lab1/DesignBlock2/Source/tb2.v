@@ -2,22 +2,22 @@
 
 module tb2();
 
-    reg[1:0] KEY;
-    output reg [7:0] LEDR;
+    reg [1:0] KEY;
+    wire [7:0] LEDR;
     wire [7:0] HEX5;
     wire [7:0] HEX4;
     wire [7:0] HEX3;
     wire [7:0] HEX2;
     wire [7:0] HEX1;
     wire [7:0] HEX0;
-    output [3:0] sum;
-    reg [7:0] SW;
-    reg carryout;
-    reg carryin;
-    output reg overflow;
-    output reg [3:0] input1;
-    output reg [3:0] input2;
-    output reg [3:0] input3;
+    wire [3:0] sum;
+    reg [7:0] SWITCH;
+    wire carryout;
+    wire carryin;
+    wire overflow;
+    wire [3:0] input1;
+    wire [3:0] input2;
+    wire [3:0] input3;
     wire carry1, carry2, carry3;
 
 fullAdder fullAdder_inst(

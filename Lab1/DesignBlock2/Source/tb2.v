@@ -17,7 +17,6 @@ module tb2();
     wire overflow;
     wire [3:0] input1;
     wire [3:0] input2;
-    wire [3:0] input3;
     wire carry1, carry2, carry3;
 
 fullAdder fullAdder_inst(

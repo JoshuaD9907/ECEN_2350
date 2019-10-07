@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Design2
-Sun Oct 06 23:33:58 2019
+Mon Oct 07 01:50:04 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,13 +13,12 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Port Connectivity Checks: "sevenseg:s5"
- 11. Port Connectivity Checks: "sevenseg:s1"
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Port Connectivity Checks: "sevenseg:s5"
+ 10. Port Connectivity Checks: "sevenseg:s1"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -45,13 +44,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 06 23:33:58 2019       ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 07 01:50:04 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Design2                                     ;
 ; Top-level Entity Name              ; Design3_top                                 ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 42                                          ;
-;     Total combinational functions  ; 42                                          ;
+; Total logic elements               ; 36                                          ;
+;     Total combinational functions  ; 36                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 63                                          ;
@@ -159,12 +158,10 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -183,16 +180,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 42          ;
+; Estimated Total logic elements              ; 36          ;
 ;                                             ;             ;
-; Total combinational functions               ; 42          ;
+; Total combinational functions               ; 36          ;
 ; Logic element usage by number of LUT inputs ;             ;
 ;     -- 4 input functions                    ; 28          ;
-;     -- 3 input functions                    ; 12          ;
+;     -- 3 input functions                    ; 6           ;
 ;     -- <=2 input functions                  ; 2           ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 42          ;
+;     -- normal mode                          ; 36          ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
 ; Total registers                             ; 0           ;
@@ -203,10 +200,10 @@ refer to the applicable agreement for further details.
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
-; Maximum fan-out node                        ; input2[3]~0 ;
-; Maximum fan-out                             ; 10          ;
-; Total fan-out                               ; 234         ;
-; Average fan-out                             ; 1.39        ;
+; Maximum fan-out node                        ; SW[0]~input ;
+; Maximum fan-out                             ; 13          ;
+; Total fan-out                               ; 216         ;
+; Average fan-out                             ; 1.33        ;
 +---------------------------------------------+-------------+
 
 
@@ -215,27 +212,11 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name      ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+-------------+--------------+
-; |Design3_top               ; 42 (28)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 63   ; 0            ; 0          ; |Design3_top             ; Design3_top ; work         ;
+; |Design3_top               ; 36 (22)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 63   ; 0            ; 0          ; |Design3_top             ; Design3_top ; work         ;
 ;    |sevenseg:s1|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Design3_top|sevenseg:s1 ; sevenseg    ; work         ;
 ;    |sevenseg:s5|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Design3_top|sevenseg:s5 ; sevenseg    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; input12s[2]                                        ; input12s[1]         ; yes                    ;
-; input22s[2]                                        ; input22s[2]         ; yes                    ;
-; input12s[1]                                        ; input12s[1]         ; yes                    ;
-; input22s[1]                                        ; input22s[2]         ; yes                    ;
-; input12s[0]                                        ; input12s[1]         ; yes                    ;
-; input22s[0]                                        ; input22s[2]         ; yes                    ;
-; Number of user-specified and inferred latches = 6  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -277,16 +258,16 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 63                          ;
-; cycloneiii_lcell_comb ; 46                          ;
-;     normal            ; 46                          ;
+; cycloneiii_lcell_comb ; 41                          ;
+;     normal            ; 41                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 3                           ;
+;         1 data inputs ; 4                           ;
 ;         2 data inputs ; 2                           ;
-;         3 data inputs ; 12                          ;
+;         3 data inputs ; 6                           ;
 ;         4 data inputs ; 28                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.45                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 4.10                        ;
 +-----------------------+-----------------------------+
 
 
@@ -305,7 +286,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Oct 06 23:33:43 2019
+    Info: Processing started: Mon Oct 07 01:49:49 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Design3_top -c Design2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -314,30 +295,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
 Info (12021): Found 1 design units, including 1 entities, in source file /users/joshua hp/documents/github/ecen_2350/lab1/designblock3/source/design3_top.v
     Info (12023): Found entity 1: Design3_top File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 1
 Info (12127): Elaborating entity "Design3_top" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at Design3_top.v(47): truncated value with size 32 to match size of target (4) File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 47
-Warning (10230): Verilog HDL assignment warning at Design3_top.v(48): truncated value with size 32 to match size of target (4) File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 48
-Warning (10240): Verilog HDL Always Construct warning at Design3_top.v(25): inferring latch(es) for variable "input12s", which holds its previous value in one or more paths through the always construct File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 25
-Warning (10240): Verilog HDL Always Construct warning at Design3_top.v(25): inferring latch(es) for variable "input22s", which holds its previous value in one or more paths through the always construct File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 25
-Info (10041): Inferred latch for "input22s[0]" at Design3_top.v(44) File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 44
-Info (10041): Inferred latch for "input22s[1]" at Design3_top.v(44) File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 44
-Info (10041): Inferred latch for "input22s[2]" at Design3_top.v(44) File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 44
-Info (10041): Inferred latch for "input12s[0]" at Design3_top.v(44) File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 44
-Info (10041): Inferred latch for "input12s[1]" at Design3_top.v(44) File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 44
-Info (10041): Inferred latch for "input12s[2]" at Design3_top.v(44) File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 44
-Info (12128): Elaborating entity "sevenseg" for hierarchy "sevenseg:s1" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 109
+Info (12128): Elaborating entity "sevenseg" for hierarchy "sevenseg:s1" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 125
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13012): Latch input12s[2] has unsafe behavior File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[6] File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 2
-Warning (13012): Latch input22s[2] has unsafe behavior File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[2] File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 2
-Warning (13012): Latch input12s[1] has unsafe behavior File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[5] File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 2
-Warning (13012): Latch input22s[1] has unsafe behavior File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[1] File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 2
-Warning (13012): Latch input12s[0] has unsafe behavior File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[4] File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 2
-Warning (13012): Latch input22s[0] has unsafe behavior File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0] File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 2
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX5[0]" is stuck at VCC File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 5
     Warning (13410): Pin "HEX5[1]" is stuck at VCC File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 5
@@ -377,14 +336,14 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 3
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock3/Source/Design3_top.v Line: 3
-Info (21057): Implemented 105 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 99 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 51 output pins
-    Info (21061): Implemented 42 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 54 warnings
-    Info: Peak virtual memory: 4803 megabytes
-    Info: Processing ended: Sun Oct 06 23:33:58 2019
+    Info (21061): Implemented 36 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
+    Info: Peak virtual memory: 4774 megabytes
+    Info: Processing ended: Mon Oct 07 01:50:04 2019
     Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Total CPU time (on all processors): 00:00:32
 
 

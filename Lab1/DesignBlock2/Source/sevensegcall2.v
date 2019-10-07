@@ -14,7 +14,15 @@ module sevensegcall2 (HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, input1, input2, sum, o
     reg [3:0] val3;
     reg [3:0] val4;
     reg [3:0] val5;
-    output overflow;
+    reg [3:0] state;
+    reg [3:0] var;
+    input overflow;
+
+    always @(state)
+    begin
+    state[3:0]=4'b0000;
+    var[3:0]=4'b1000;
+    end
 
     always @(input1)
         begin
@@ -42,27 +50,27 @@ module sevensegcall2 (HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, input1, input2, sum, o
     
     always @(overflow, sum)
         begin
-        if(overflow>=0)
+        if(overflow==1)
         begin
             val1[3:0]=4'b0000;
             val0[3:0]=4'b1000;
         end
-        if(overflow<=0 && sum[3]==0)
+        if(overflow==0 && sum[3]==0)
         begin
             val1[3:0]=4'b0001;
             val0[3:0]=sum[3:0];
         end
-        if(overflow<=0 && sum[3]==1)
+        if(overflow==0 && sum[3]==1)
         begin
             val1[3:0]=4'b0100;
             val0[3:0]=sum[3:0];
         end
     end
 
-    sevenseg a0(x, val5, HEX5);
-    sevenseg a1(val4, x, HEX4);
-    sevenseg a2(x, val3, HEX3);
-    sevenseg a3(val2, x, HEX2);
-    sevenseg a4(x, val1, HEX1);
-    sevenseg a5(val0, x, HEX0);
+    sevenseg a0(val5, state, HEX5);
+    sevenseg a1(val4, var, HEX4);
+    sevenseg a2(val3, state, HEX3);
+    sevenseg a3(val2, var, HEX2);
+    sevenseg a4(val1, state, HEX1);
+    sevenseg a5(val0, var, HEX0);
 endmodule

@@ -41,7 +41,7 @@ module Lab1_top(LEDR[9:0], SW[9:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], H
             begin
                 
             end
-            if(SW[9] == 2'b1)
+            if(SW[9] == 1'b1)
             begin
                 
             end*/

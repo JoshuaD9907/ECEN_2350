@@ -56,8 +56,8 @@ module Design3_top(LEDR[2:0], SW[9:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0]
 
             //if(input1[3] == 1 & input2[3] == 1)
             //begin
-            HEX1[7:0] = 8'b11_11_11_11;
-            HEX5[7:0] = 8'b11_11_11_11;
+            //HEX1[7:0] = 8'b11_11_11_11;
+            //HEX5[7:0] = 8'b11_11_11_11;
             //end
             /*if(input1[3] == 0 & input2[3] == 0)
             begin

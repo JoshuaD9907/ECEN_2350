@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Design2
-Mon Oct 07 03:08:47 2019
+Mon Oct 07 03:18:47 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 07 03:08:47 2019       ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 07 03:18:47 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Design2                                     ;
 ; Top-level Entity Name              ; Design2_top                                 ;
@@ -51,7 +51,7 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 66                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 86                                          ;
+; Total pins                         ; 84                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -196,14 +196,14 @@ refer to the applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 0                ;
 ;     -- I/O registers                        ; 0                ;
 ;                                             ;                  ;
-; I/O pins                                    ; 86               ;
+; I/O pins                                    ; 84               ;
 ;                                             ;                  ;
 ; Embedded Multiplier 9-bit elements          ; 0                ;
 ;                                             ;                  ;
 ; Maximum fan-out node                        ; fullAdder:U1|sum ;
 ; Maximum fan-out                             ; 21               ;
-; Total fan-out                               ; 377              ;
-; Average fan-out                             ; 1.58             ;
+; Total fan-out                               ; 375              ;
+; Average fan-out                             ; 1.60             ;
 +---------------------------------------------+------------------+
 
 
@@ -212,7 +212,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                        ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+---------------+--------------+
-; |Design2_top               ; 66 (6)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 86   ; 0            ; 0          ; |Design2_top                               ; Design2_top   ; work         ;
+; |Design2_top               ; 66 (6)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 84   ; 0            ; 0          ; |Design2_top                               ; Design2_top   ; work         ;
 ;    |fullAdder:U0|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Design2_top|fullAdder:U0                  ; fullAdder     ; work         ;
 ;    |fullAdder:U1|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Design2_top|fullAdder:U1                  ; fullAdder     ; work         ;
 ;    |fullAdder:U2|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Design2_top|fullAdder:U2                  ; fullAdder     ; work         ;
@@ -246,7 +246,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 86                          ;
+; boundary_port         ; 84                          ;
 ; cycloneiii_io_obuf    ; 1                           ;
 ; cycloneiii_lcell_comb ; 81                          ;
 ;     normal            ; 81                          ;
@@ -276,7 +276,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Oct 07 03:08:37 2019
+    Info: Processing started: Mon Oct 07 03:18:37 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Design2 -c Design2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -290,6 +290,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file /digita
 Info (12021): Found 1 design units, including 1 entities, in source file /digitallogic/ecen_2350/lab1/designblock2/source/design2_top.v
     Info (12023): Found entity 1: Design2_top File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 1
 Info (12127): Elaborating entity "Design2_top" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at Design2_top.v(22): truncated value with size 10 to match size of target (8) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 22
 Info (12128): Elaborating entity "fullAdder" for hierarchy "fullAdder:U0" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 54
 Info (12128): Elaborating entity "sevensegcall2" for hierarchy "sevensegcall2:U4" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 58
 Warning (10240): Verilog HDL Always Construct warning at sevensegcall2.v(28): inferring latch(es) for variable "val5", which holds its previous value in one or more paths through the always construct File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 28
@@ -329,8 +330,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[5]" is stuck at GND File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 3
     Warning (13410): Pin "LEDR[6]" is stuck at GND File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 3
     Warning (13410): Pin "LEDR[7]" is stuck at VCC File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 3
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 3
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 3
     Warning (13410): Pin "HEX5[0]" is stuck at VCC File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 4
     Warning (13410): Pin "HEX5[1]" is stuck at VCC File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 4
     Warning (13410): Pin "HEX5[2]" is stuck at VCC File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 4
@@ -354,15 +353,15 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 2
-Info (21057): Implemented 152 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 150 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 75 output pins
+    Info (21059): Implemented 73 output pins
     Info (21060): Implemented 1 bidirectional pins
     Info (21061): Implemented 66 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 48 warnings
-    Info: Peak virtual memory: 4771 megabytes
-    Info: Processing ended: Mon Oct 07 03:08:47 2019
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 47 warnings
+    Info: Peak virtual memory: 4773 megabytes
+    Info: Processing ended: Mon Oct 07 03:18:47 2019
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:20
 
 

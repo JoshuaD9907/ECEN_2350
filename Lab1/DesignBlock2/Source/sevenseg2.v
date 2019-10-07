@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 module sevenseg2 (data, data2, display);
-=======
-module sevenseg2 (data, data2, display);
->>>>>>> cc01e435f81ca4468e17682021eed4abcf4ae0fb
 input [3:0] data;
 input [3:0] data2;
 output reg [7:0] display;

@@ -1,5 +1,5 @@
 Fitter report for Design2
-Mon Oct 07 03:08:57 2019
+Mon Oct 07 03:18:54 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Oct 07 03:08:57 2019       ;
+; Fitter Status                      ; Successful - Mon Oct 07 03:18:54 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Design2                                     ;
 ; Top-level Entity Name              ; Design2_top                                 ;
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 67 / 49,760 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 0 / 49,760 ( 0 % )                          ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 86 / 360 ( 24 % )                           ;
+; Total pins                         ; 84 / 360 ( 23 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -150,12 +150,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.04        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.6%      ;
+;     Processors 2-6         ;   0.8%      ;
 +----------------------------+-------------+
 
 
@@ -165,11 +165,15 @@ refer to the applicable agreement for further details.
 ; Name         ; Ignored Entity ; Ignored From ; Ignored To    ; Ignored Value ; Ignored Source ;
 +--------------+----------------+--------------+---------------+---------------+----------------+
 ; Location     ;                ;              ; ADC_CLK_10    ; PIN_N5        ; QSF Assignment ;
+; Location     ;                ;              ; LEDR[8]       ; PIN_A11       ; QSF Assignment ;
+; Location     ;                ;              ; LEDR[9]       ; PIN_B11       ; QSF Assignment ;
 ; Location     ;                ;              ; MAX10_CLK1_50 ; PIN_P11       ; QSF Assignment ;
 ; Location     ;                ;              ; MAX10_CLK2_50 ; PIN_N14       ; QSF Assignment ;
 ; Location     ;                ;              ; SW[8]         ; PIN_B14       ; QSF Assignment ;
 ; Location     ;                ;              ; SW[9]         ; PIN_F15       ; QSF Assignment ;
 ; I/O Standard ; Design2_top    ;              ; ADC_CLK_10    ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; Design2_top    ;              ; LEDR[8]       ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; Design2_top    ;              ; LEDR[9]       ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; Design2_top    ;              ; MAX10_CLK1_50 ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; Design2_top    ;              ; MAX10_CLK2_50 ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; Design2_top    ;              ; SW[8]         ; 3.3-V LVTTL   ; QSF Assignment ;
@@ -183,8 +187,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 259 ) ; 0.00 % ( 0 / 259 )         ; 0.00 % ( 0 / 259 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 259 ) ; 0.00 % ( 0 / 259 )         ; 0.00 % ( 0 / 259 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 255 ) ; 0.00 % ( 0 / 255 )         ; 0.00 % ( 0 / 255 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 255 ) ; 0.00 % ( 0 / 255 )         ; 0.00 % ( 0 / 255 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -207,7 +211,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 243 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 239 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -242,9 +246,9 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ;     -- Dedicated logic registers            ; 0 / 49,760 ( 0 % )    ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )     ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 10 / 3,110 ( < 1 % )  ;
+; Total LABs:  partially or completely used   ; 11 / 3,110 ( < 1 % )  ;
 ; Virtual pins                                ; 0                     ;
-; I/O pins                                    ; 86 / 360 ( 24 % )     ;
+; I/O pins                                    ; 84 / 360 ( 23 % )     ;
 ;     -- Clock pins                           ; 2 / 8 ( 25 % )        ;
 ;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )       ;
 ;                                             ;                       ;
@@ -263,11 +267,11 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0.2% / 0.2% / 0.2%    ;
-; Peak interconnect usage (total/H/V)         ; 1.4% / 1.7% / 1.2%    ;
+; Peak interconnect usage (total/H/V)         ; 1.4% / 1.6% / 1.1%    ;
 ; Maximum fan-out                             ; 21                    ;
 ; Highest non-global fan-out                  ; 21                    ;
-; Total fan-out                               ; 388                   ;
-; Average fan-out                             ; 1.50                  ;
+; Total fan-out                               ; 386                   ;
+; Average fan-out                             ; 1.51                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -299,10 +303,10 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ;     -- Dedicated logic registers            ; 0 / 49760 ( 0 % )    ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 10 / 3110 ( < 1 % )  ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 11 / 3110 ( < 1 % )  ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
-; I/O pins                                    ; 86                   ; 0                              ;
+; I/O pins                                    ; 84                   ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )      ; 0 / 288 ( 0 % )                ;
 ; Total memory bits                           ; 0                    ; 0                              ;
 ; Total RAM block bits                        ; 0                    ; 0                              ;
@@ -316,7 +320,7 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 394                  ; 8                              ;
+;     -- Total Connections                    ; 392                  ; 8                              ;
 ;     -- Registered Connections               ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
@@ -325,7 +329,7 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ;                                             ;                      ;                                ;
 ; Partition Interface                         ;                      ;                                ;
 ;     -- Input Ports                          ; 10                   ; 0                              ;
-;     -- Output Ports                         ; 75                   ; 0                              ;
+;     -- Output Ports                         ; 73                   ; 0                              ;
 ;     -- Bidir Ports                          ; 1                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Registered Ports                            ;                      ;                                ;
@@ -423,25 +427,23 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; LEDR[5]   ; C13   ; 7        ; 58           ; 54           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; LEDR[6]   ; E14   ; 7        ; 66           ; 54           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; LEDR[7]   ; D14   ; 7        ; 56           ; 54           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; LEDR[8]   ; A11   ; 7        ; 51           ; 54           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; LEDR[9]   ; B11   ; 7        ; 49           ; 54           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; input1[0] ; J10   ; 8        ; 34           ; 39           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; input1[1] ; D7    ; 8        ; 29           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; input1[2] ; T21   ; 5        ; 78           ; 18           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; input1[3] ; E11   ; 8        ; 36           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; input2[0] ; L22   ; 5        ; 78           ; 25           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; input2[1] ; N21   ; 5        ; 78           ; 25           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; input2[2] ; U22   ; 5        ; 78           ; 21           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; input2[3] ; D8    ; 8        ; 31           ; 39           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; input3[0] ; D9    ; 8        ; 31           ; 39           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; input3[1] ; C7    ; 8        ; 34           ; 39           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; input3[2] ; A6    ; 8        ; 34           ; 39           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; input3[3] ; E10   ; 8        ; 36           ; 39           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; overflow  ; A5    ; 8        ; 31           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; sum[0]    ; C8    ; 8        ; 36           ; 39           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; sum[1]    ; A4    ; 8        ; 31           ; 39           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; sum[2]    ; H11   ; 8        ; 34           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; sum[3]    ; B7    ; 8        ; 34           ; 39           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; input1[0] ; H11   ; 8        ; 34           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; input1[1] ; J10   ; 8        ; 34           ; 39           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; input1[2] ; P20   ; 5        ; 78           ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; input1[3] ; R18   ; 5        ; 78           ; 24           ; 22           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; input2[0] ; A5    ; 8        ; 31           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; input2[1] ; D10   ; 8        ; 31           ; 39           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; input2[2] ; D9    ; 8        ; 31           ; 39           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; input2[3] ; A3    ; 8        ; 26           ; 39           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; input3[0] ; A6    ; 8        ; 34           ; 39           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; input3[1] ; C8    ; 8        ; 36           ; 39           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; input3[2] ; E10   ; 8        ; 36           ; 39           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; input3[3] ; L22   ; 5        ; 78           ; 25           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; overflow  ; B7    ; 8        ; 34           ; 39           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; sum[0]    ; C7    ; 8        ; 34           ; 39           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; sum[1]    ; N21   ; 5        ; 78           ; 25           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; sum[2]    ; A4    ; 8        ; 31           ; 39           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; sum[3]    ; E11   ; 8        ; 36           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +-----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -450,7 +452,7 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------+-----------------+------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+----------------------+----------------------+---------------------+
 ; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Output Termination                ; Termination Control Block ; Output Buffer Pre-emphasis ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------+-----------------+------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+----------------------+----------------------+---------------------+
-; carryout ; M21   ; 5        ; 78           ; 25           ; 21           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; Fitter               ; 0 pF                 ; -                   ;
+; carryout ; D8    ; 8        ; 31           ; 39           ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; Fitter               ; 0 pF                 ; -                   ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------+-----------------+------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -463,7 +465,8 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; G2       ; DIFFIO_RX_L17p, DIFFOUT_L17p, TCK, Low_Speed       ; Reserved as secondary function ; ~ALTERA_TCK~        ; Dual Purpose Pin ;
 ; L4       ; DIFFIO_RX_L18n, DIFFOUT_L18n, TDI, Low_Speed       ; Reserved as secondary function ; ~ALTERA_TDI~        ; Dual Purpose Pin ;
 ; M5       ; DIFFIO_RX_L18p, DIFFOUT_L18p, TDO, Low_Speed       ; Reserved as secondary function ; ~ALTERA_TDO~        ; Dual Purpose Pin ;
-; D9       ; DIFFIO_RX_T42n, DIFFOUT_T42n, DEV_CLRn, Low_Speed  ; Use as regular IO              ; input3[0]           ; Dual Purpose Pin ;
+; D9       ; DIFFIO_RX_T42n, DIFFOUT_T42n, DEV_CLRn, Low_Speed  ; Use as regular IO              ; input2[2]           ; Dual Purpose Pin ;
+; D10      ; DIFFIO_RX_T44p, DIFFOUT_T44p, DEV_OE, Low_Speed    ; Use as regular IO              ; input2[1]           ; Dual Purpose Pin ;
 ; H10      ; CONFIG_SEL, Low_Speed                              ; Reserved as secondary function ; ~ALTERA_CONFIG_SEL~ ; Dual Purpose Pin ;
 ; H9       ; nCONFIG, Low_Speed                                 ; Reserved as secondary function ; ~ALTERA_nCONFIG~    ; Dual Purpose Pin ;
 ; G9       ; DIFFIO_RX_T50p, DIFFOUT_T50p, nSTATUS, Low_Speed   ; Reserved as secondary function ; ~ALTERA_nSTATUS~    ; Dual Purpose Pin ;
@@ -481,10 +484,10 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; 2        ; 0 / 36 ( 0 % )   ; 2.5V          ; --           ;
 ; 3        ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ;
 ; 4        ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ;
-; 5        ; 5 / 40 ( 13 % )  ; 2.5V          ; --           ;
+; 5        ; 4 / 40 ( 10 % )  ; 2.5V          ; --           ;
 ; 6        ; 30 / 60 ( 50 % ) ; 3.3V          ; --           ;
-; 7        ; 38 / 52 ( 73 % ) ; 3.3V          ; --           ;
-; 8        ; 17 / 36 ( 47 % ) ; 2.5V          ; --           ;
+; 7        ; 36 / 52 ( 69 % ) ; 3.3V          ; --           ;
+; 8        ; 18 / 36 ( 50 % ) ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -495,15 +498,15 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 +----------+------------+----------+------------------------------------------------+--------+-----------------------+---------+------------+-----------------+----------+--------------+
 ; A1       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; A2       ; 481        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; A3       ; 483        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; A4       ; 475        ; 8        ; sum[1]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; A5       ; 473        ; 8        ; overflow                                       ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; A6       ; 471        ; 8        ; input3[2]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; A3       ; 483        ; 8        ; input2[3]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; A4       ; 475        ; 8        ; sum[2]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; A5       ; 473        ; 8        ; input2[0]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; A6       ; 471        ; 8        ; input3[0]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A7       ; 445        ; 7        ; KEY[1]                                         ; input  ; 3.3 V Schmitt Trigger ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A8       ; 447        ; 7        ; LEDR[0]                                        ; output ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A9       ; 449        ; 7        ; LEDR[1]                                        ; output ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A10      ; 439        ; 7        ; LEDR[2]                                        ; output ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
-; A11      ; 437        ; 7        ; LEDR[8]                                        ; output ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
+; A11      ; 437        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A12      ; 435        ; 7        ; SW[4]                                          ; input  ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A13      ; 433        ; 7        ; SW[6]                                          ; input  ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A14      ; 425        ; 7        ; SW[7]                                          ; input  ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -565,11 +568,11 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; B4       ; 486        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B5       ; 485        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B6       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; B7       ; 469        ; 8        ; sum[3]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; B7       ; 469        ; 8        ; overflow                                       ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B8       ; 451        ; 7        ; KEY[0]                                         ; input  ; 3.3 V Schmitt Trigger ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B9       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B10      ; 448        ; 7        ; LEDR[3]                                        ; output ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
-; B11      ; 443        ; 7        ; LEDR[9]                                        ; output ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
+; B11      ; 443        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B12      ; 441        ; 7        ; SW[5]                                          ; input  ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B13      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B14      ; 427        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -587,8 +590,8 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; C4       ; 487        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C5       ; 489        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C6       ; 477        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; C7       ; 467        ; 8        ; input3[1]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; C8       ; 465        ; 8        ; sum[0]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; C7       ; 467        ; 8        ; sum[0]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; C8       ; 465        ; 8        ; input3[1]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C9       ; 450        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C10      ; 442        ; 7        ; SW[0]                                          ; input  ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; C11      ; 440        ; 7        ; SW[1]                                          ; input  ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -609,10 +612,10 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; D4       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; D5       ; 491        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D6       ; 496        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; D7       ; 479        ; 8        ; input1[1]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; D8       ; 472        ; 8        ; input2[3]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; D9       ; 474        ; 8        ; input3[0]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; D10      ; 476        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; D7       ; 479        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; --       ; --           ;
+; D8       ; 472        ; 8        ; carryout                                       ; bidir  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; D9       ; 474        ; 8        ; input2[2]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; D10      ; 476        ; 8        ; input2[1]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D11      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; D12      ; 438        ; 7        ; SW[2]                                          ; input  ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; D13      ; 431        ; 7        ; LEDR[4]                                        ; output ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -634,8 +637,8 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; E7       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; E8       ; 488        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; E9       ; 478        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; E10      ; 466        ; 8        ; input3[3]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; E11      ; 464        ; 8        ; input1[3]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; E10      ; 466        ; 8        ; input3[2]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; E11      ; 464        ; 8        ; sum[3]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E12      ; 429        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; E13      ; 430        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; E14      ; 406        ; 7        ; LEDR[6]                                        ; output ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -701,7 +704,7 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; H8       ;            ; --       ; VCCA3                                          ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; H9       ; 482        ; 8        ; ~ALTERA_nCONFIG~ / RESERVED_INPUT              ; input  ; 2.5 V Schmitt Trigger ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H10      ; 480        ; 8        ; ~ALTERA_CONFIG_SEL~ / RESERVED_INPUT           ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; H11      ; 470        ; 8        ; sum[2]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; H11      ; 470        ; 8        ; input1[0]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H12      ; 444        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; H13      ; 432        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; H14      ; 420        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -722,7 +725,7 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; J7       ;            ;          ; VCCINT                                         ; power  ;                       ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; J8       ; 4          ; 1A       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J9       ; 6          ; 1A       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
-; J10      ; 468        ; 8        ; input1[0]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; J10      ; 468        ; 8        ; input1[1]                                      ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; J11      ; 446        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; J12      ; 434        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; J13      ; 422        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -778,7 +781,7 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; L19      ; 349        ; 6        ; HEX5[7]                                        ; output ; 3.3-V LVTTL           ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; L20      ; 351        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L21      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; L22      ; 314        ; 5        ; input2[0]                                      ; output ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L22      ; 314        ; 5        ; input3[3]                                      ; output ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M1       ; 79         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M2       ; 77         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; --       ; --           ;
 ; M3       ; 50         ; 1B       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -799,7 +802,7 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; M18      ; 348        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M19      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; M20      ; 337        ; 6        ; HEX5[4]                                        ; output ; 3.3-V LVTTL           ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; M21      ; 312        ; 5        ; carryout                                       ; bidir  ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
+; M21      ; 312        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M22      ; 315        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N1       ; 87         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N2       ; 75         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -821,7 +824,7 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; N18      ; 336        ; 6        ; HEX5[3]                                        ; output ; 3.3-V LVTTL           ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; N19      ; 338        ; 6        ; HEX5[5]                                        ; output ; 3.3-V LVTTL           ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; N20      ; 339        ; 6        ; HEX5[6]                                        ; output ; 3.3-V LVTTL           ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; N21      ; 313        ; 5        ; input2[1]                                      ; output ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N21      ; 313        ; 5        ; sum[1]                                         ; output ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; N22      ; 307        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P1       ; 85         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P2       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
@@ -842,7 +845,7 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; P17      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; P18      ; 310        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P19      ; 309        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
-; P20      ; 311        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+; P20      ; 311        ; 5        ; input1[2]                                      ; output ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; P21      ; 305        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P22      ; 303        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; --       ; --           ;
 ; R1       ; 121        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -862,7 +865,7 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; R15      ; 292        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R16      ;            ; 5        ; VCCIO5                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; R17      ;            ; 5        ; VCCIO5                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
-; R18      ; 308        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+; R18      ; 308        ; 5        ; input1[3]                                      ; output ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R19      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; R20      ; 299        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R21      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
@@ -887,7 +890,7 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; T18      ; 298        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T19      ; 296        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T20      ; 297        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
-; T21      ; 293        ; 5        ; input1[2]                                      ; output ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T21      ; 293        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T22      ; 295        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; U1       ; 89         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; U2       ; 90         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -910,7 +913,7 @@ The pin-out file can be found in D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Qua
 ; U19      ; 282        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; U20      ; 290        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; U21      ; 300        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
-; U22      ; 302        ; 5        ; input2[2]                                      ; output ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U22      ; 302        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V1       ; 91         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V2       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; V3       ; 95         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -994,8 +997,6 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; LEDR[5]   ; Missing drive strength        ;
 ; LEDR[6]   ; Missing drive strength        ;
 ; LEDR[7]   ; Missing drive strength        ;
-; LEDR[8]   ; Missing drive strength        ;
-; LEDR[9]   ; Missing drive strength        ;
 ; HEX5[0]   ; Missing drive strength        ;
 ; HEX5[1]   ; Missing drive strength        ;
 ; HEX5[2]   ; Missing drive strength        ;
@@ -1088,7 +1089,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                        ; Entity Name   ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------+---------------+--------------+
-; |Design2_top               ; 67 (7)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 86   ; 0            ; 67 (7)       ; 0 (0)             ; 0 (0)            ; 0          ; |Design2_top                               ; Design2_top   ; work         ;
+; |Design2_top               ; 67 (7)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 84   ; 0            ; 67 (7)       ; 0 (0)             ; 0 (0)            ; 0          ; |Design2_top                               ; Design2_top   ; work         ;
 ;    |fullAdder:U0|          ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0          ; |Design2_top|fullAdder:U0                  ; fullAdder     ; work         ;
 ;    |fullAdder:U1|          ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0          ; |Design2_top|fullAdder:U1                  ; fullAdder     ; work         ;
 ;    |fullAdder:U2|          ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0          ; |Design2_top|fullAdder:U2                  ; fullAdder     ; work         ;
@@ -1115,8 +1116,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[5]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; LEDR[6]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; LEDR[7]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[8]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[9]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; KEY[1]    ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; HEX5[0]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; HEX5[1]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
@@ -1185,12 +1184,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; input3[3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; carryout  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; SW[7]     ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; SW[4]     ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; SW[4]     ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; SW[5]     ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; SW[6]     ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; SW[3]     ; Input    ; (6) 868 ps    ; (6) 868 ps    ; --                    ; --  ; --   ;
-; SW[0]     ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; SW[1]     ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; SW[3]     ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; SW[0]     ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; SW[1]     ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; SW[2]     ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; KEY[0]    ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 +-----------+----------+---------------+---------------+-----------------------+-----+------+
@@ -1217,16 +1216,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - input1[3]~output                         ; 0                 ; 6       ;
 ;      - HEX5[6]~output                           ; 0                 ; 6       ;
 ; SW[4]                                           ;                   ;         ;
-;      - sevensegcall2:U4|sevenseg2:a1|WideOr6~0  ; 0                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a1|WideOr5~0  ; 0                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a1|WideOr4~0  ; 0                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a1|WideOr3~0  ; 0                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a1|WideOr2~0  ; 0                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a1|WideOr1~0  ; 0                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a1|WideOr0~0  ; 0                 ; 6       ;
-;      - fullAdder:U0|carryout~0                  ; 0                 ; 6       ;
-;      - fullAdder:U0|sum~0                       ; 0                 ; 6       ;
-;      - input1[0]~output                         ; 0                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a1|WideOr6~0  ; 1                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a1|WideOr5~0  ; 1                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a1|WideOr4~0  ; 1                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a1|WideOr3~0  ; 1                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a1|WideOr2~0  ; 1                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a1|WideOr1~0  ; 1                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a1|WideOr0~0  ; 1                 ; 6       ;
+;      - fullAdder:U0|carryout~0                  ; 1                 ; 6       ;
+;      - fullAdder:U0|sum~0                       ; 1                 ; 6       ;
+;      - input1[0]~output                         ; 1                 ; 6       ;
 ; SW[5]                                           ;                   ;         ;
 ;      - sevensegcall2:U4|sevenseg2:a1|WideOr6~0  ; 0                 ; 6       ;
 ;      - sevensegcall2:U4|sevenseg2:a1|WideOr5~0  ; 0                 ; 6       ;
@@ -1261,32 +1260,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - overflow~1                               ; 1                 ; 6       ;
 ;      - input2~3                                 ; 1                 ; 6       ;
 ;      - fullAdder:U3|carryout~0                  ; 1                 ; 6       ;
-;      - input3[3]~output                         ; 0                 ; 6       ;
+;      - input3[3]~output                         ; 1                 ; 6       ;
 ;      - HEX3[6]~output                           ; 1                 ; 6       ;
 ; SW[0]                                           ;                   ;         ;
-;      - sevensegcall2:U4|sevenseg2:a3|WideOr6~0  ; 1                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a3|WideOr5~0  ; 1                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a3|WideOr4~0  ; 1                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a3|WideOr3~0  ; 1                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a3|WideOr2~0  ; 1                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a3|WideOr1~0  ; 1                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a3|WideOr0~0  ; 1                 ; 6       ;
-;      - fullAdder:U0|carryout~0                  ; 1                 ; 6       ;
-;      - fullAdder:U0|sum~0                       ; 1                 ; 6       ;
-;      - input2~0                                 ; 1                 ; 6       ;
-;      - input3[0]~output                         ; 1                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a3|WideOr6~0  ; 0                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a3|WideOr5~0  ; 0                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a3|WideOr4~0  ; 0                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a3|WideOr3~0  ; 0                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a3|WideOr2~0  ; 0                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a3|WideOr1~0  ; 0                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a3|WideOr0~0  ; 0                 ; 6       ;
+;      - fullAdder:U0|carryout~0                  ; 0                 ; 6       ;
+;      - fullAdder:U0|sum~0                       ; 0                 ; 6       ;
+;      - input2~0                                 ; 0                 ; 6       ;
+;      - input3[0]~output                         ; 0                 ; 6       ;
 ; SW[1]                                           ;                   ;         ;
-;      - sevensegcall2:U4|sevenseg2:a3|WideOr6~0  ; 1                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a3|WideOr5~0  ; 1                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a3|WideOr4~0  ; 1                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a3|WideOr3~0  ; 1                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a3|WideOr2~0  ; 1                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a3|WideOr1~0  ; 1                 ; 6       ;
-;      - sevensegcall2:U4|sevenseg2:a3|WideOr0~0  ; 1                 ; 6       ;
-;      - fullAdder:U1|carryout~0                  ; 1                 ; 6       ;
-;      - fullAdder:U1|sum                         ; 1                 ; 6       ;
-;      - input2~1                                 ; 1                 ; 6       ;
-;      - input3[1]~output                         ; 1                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a3|WideOr6~0  ; 0                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a3|WideOr5~0  ; 0                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a3|WideOr4~0  ; 0                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a3|WideOr3~0  ; 0                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a3|WideOr2~0  ; 0                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a3|WideOr1~0  ; 0                 ; 6       ;
+;      - sevensegcall2:U4|sevenseg2:a3|WideOr0~0  ; 0                 ; 6       ;
+;      - fullAdder:U1|carryout~0                  ; 0                 ; 6       ;
+;      - fullAdder:U1|sum                         ; 0                 ; 6       ;
+;      - input2~1                                 ; 0                 ; 6       ;
+;      - input3[1]~output                         ; 0                 ; 6       ;
 ; SW[2]                                           ;                   ;         ;
 ;      - sevensegcall2:U4|sevenseg2:a3|WideOr6~0  ; 0                 ; 6       ;
 ;      - sevensegcall2:U4|sevenseg2:a3|WideOr5~0  ; 0                 ; 6       ;
@@ -1322,24 +1321,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 106 / 148,641 ( < 1 % ) ;
-; C16 interconnects     ; 35 / 5,382 ( < 1 % )    ;
-; C4 interconnects      ; 116 / 106,704 ( < 1 % ) ;
-; Direct links          ; 11 / 148,641 ( < 1 % )  ;
+; Block interconnects   ; 108 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 33 / 5,382 ( < 1 % )    ;
+; C4 interconnects      ; 98 / 106,704 ( < 1 % )  ;
+; Direct links          ; 2 / 148,641 ( < 1 % )   ;
 ; Global clocks         ; 0 / 20 ( 0 % )          ;
-; Local interconnects   ; 26 / 49,760 ( < 1 % )   ;
+; Local interconnects   ; 27 / 49,760 ( < 1 % )   ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )         ;
 ; R24 interconnects     ; 36 / 5,406 ( < 1 % )    ;
-; R4 interconnects      ; 103 / 147,764 ( < 1 % ) ;
+; R4 interconnects      ; 100 / 147,764 ( < 1 % ) ;
 +-----------------------+-------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +--------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 6.70) ; Number of LABs  (Total = 10) ;
+; Number of Logic Elements  (Average = 6.09) ; Number of LABs  (Total = 11) ;
 +--------------------------------------------+------------------------------+
-; 1                                          ; 6                            ;
+; 1                                          ; 7                            ;
 ; 2                                          ; 0                            ;
 ; 3                                          ; 0                            ;
 ; 4                                          ; 0                            ;
@@ -1350,8 +1349,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 9                                          ; 0                            ;
 ; 10                                         ; 0                            ;
 ; 11                                         ; 0                            ;
-; 12                                         ; 0                            ;
-; 13                                         ; 1                            ;
+; 12                                         ; 1                            ;
+; 13                                         ; 0                            ;
 ; 14                                         ; 0                            ;
 ; 15                                         ; 0                            ;
 ; 16                                         ; 3                            ;
@@ -1361,10 +1360,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 6.70) ; Number of LABs  (Total = 10) ;
+; Number of Signals Sourced  (Average = 6.09) ; Number of LABs  (Total = 11) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
-; 1                                           ; 6                            ;
+; 1                                           ; 7                            ;
 ; 2                                           ; 0                            ;
 ; 3                                           ; 0                            ;
 ; 4                                           ; 0                            ;
@@ -1375,8 +1374,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 9                                           ; 0                            ;
 ; 10                                          ; 0                            ;
 ; 11                                          ; 0                            ;
-; 12                                          ; 0                            ;
-; 13                                          ; 1                            ;
+; 12                                          ; 1                            ;
+; 13                                          ; 0                            ;
 ; 14                                          ; 0                            ;
 ; 15                                          ; 0                            ;
 ; 16                                          ; 3                            ;
@@ -1386,10 +1385,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 4.80) ; Number of LABs  (Total = 10) ;
+; Number of Signals Sourced Out  (Average = 4.36) ; Number of LABs  (Total = 11) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 6                            ;
+; 1                                               ; 7                            ;
 ; 2                                               ; 0                            ;
 ; 3                                               ; 0                            ;
 ; 4                                               ; 0                            ;
@@ -1400,8 +1399,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 9                                               ; 1                            ;
 ; 10                                              ; 0                            ;
 ; 11                                              ; 0                            ;
-; 12                                              ; 0                            ;
-; 13                                              ; 1                            ;
+; 12                                              ; 1                            ;
+; 13                                              ; 0                            ;
 ; 14                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
@@ -1409,13 +1408,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 5.20) ; Number of LABs  (Total = 10) ;
+; Number of Distinct Inputs  (Average = 5.09) ; Number of LABs  (Total = 11) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 0                            ;
 ; 2                                           ; 4                            ;
 ; 3                                           ; 0                            ;
-; 4                                           ; 1                            ;
+; 4                                           ; 2                            ;
 ; 5                                           ; 0                            ;
 ; 6                                           ; 0                            ;
 ; 7                                           ; 0                            ;
@@ -1484,9 +1483,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 68           ; 0            ; 68           ; 0            ; 0            ; 86        ; 68           ; 0            ; 86        ; 86        ; 0            ; 18           ; 0            ; 0            ; 11           ; 0            ; 18           ; 11           ; 0            ; 0            ; 0            ; 18           ; 0            ; 0            ; 0            ; 0            ; 0            ; 86        ; 0            ; 0            ;
+; Total Pass         ; 66           ; 0            ; 66           ; 0            ; 0            ; 84        ; 66           ; 0            ; 84        ; 84        ; 0            ; 18           ; 0            ; 0            ; 11           ; 0            ; 18           ; 11           ; 0            ; 0            ; 0            ; 18           ; 0            ; 0            ; 0            ; 0            ; 0            ; 84        ; 0            ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 18           ; 86           ; 18           ; 86           ; 86           ; 0         ; 18           ; 86           ; 0         ; 0         ; 86           ; 68           ; 86           ; 86           ; 75           ; 86           ; 68           ; 75           ; 86           ; 86           ; 86           ; 68           ; 86           ; 86           ; 86           ; 86           ; 86           ; 0         ; 86           ; 86           ;
+; Total Inapplicable ; 18           ; 84           ; 18           ; 84           ; 84           ; 0         ; 18           ; 84           ; 0         ; 0         ; 84           ; 66           ; 84           ; 84           ; 73           ; 84           ; 66           ; 73           ; 84           ; 84           ; 84           ; 66           ; 84           ; 84           ; 84           ; 84           ; 84           ; 0         ; 84           ; 84           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; LEDR[0]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[1]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1496,8 +1495,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[5]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[6]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[7]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; LEDR[8]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; LEDR[9]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; KEY[1]             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; HEX5[0]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; HEX5[1]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1650,7 +1647,7 @@ Info (12825): Data[1]/ASDO dual-purpose pin not reserved
 Info (12825): nCSO dual-purpose pin not reserved
 Info (12825): DCLK dual-purpose pin not reserved
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (169085): No exact pin location assignment(s) for 18 pins of 86 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Critical Warning (169085): No exact pin location assignment(s) for 18 pins of 84 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Info (332104): Reading SDC File: 'Design2.sdc'
 Warning (332174): Ignored filter at Design2.sdc(9): ADC_CLK_10 could not be matched with a port File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Quartus/Design2.sdc Line: 9
 Warning (332049): Ignored create_clock at Design2.sdc(9): Argument <targets> is an empty collection File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Quartus/Design2.sdc Line: 9
@@ -1682,10 +1679,12 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  48 pins available
         Info (176213): I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  40 pins available
         Info (176213): I/O bank number 6 does not use VREF pins and has 3.3V VCCIO pins. 30 total pin(s) used --  30 pins available
-        Info (176213): I/O bank number 7 does not use VREF pins and has 3.3V VCCIO pins. 38 total pin(s) used --  14 pins available
+        Info (176213): I/O bank number 7 does not use VREF pins and has 3.3V VCCIO pins. 36 total pin(s) used --  16 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  32 pins available
 Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "ADC_CLK_10" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "LEDR[8]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "LEDR[9]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "MAX10_CLK1_50" is assigned to location or region, but does not exist in design
     Warning (15706): Node "MAX10_CLK2_50" is assigned to location or region, but does not exist in design
     Warning (15706): Node "SW[8]" is assigned to location or region, but does not exist in design
@@ -1725,11 +1724,11 @@ Warning (169177): 10 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 
 Warning (169064): Following 1 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
     Info (169065): Pin carryout has a permanently enabled output enable File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 12
 Info (144001): Generated suppressed messages file D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Quartus/Design2.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 20 warnings
-    Info: Peak virtual memory: 5772 megabytes
-    Info: Processing ended: Mon Oct 07 03:08:58 2019
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:14
+Info: Quartus Prime Fitter was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 5773 megabytes
+    Info: Processing ended: Mon Oct 07 03:18:54 2019
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +----------------------------+

@@ -25,6 +25,14 @@ module Lab1_top(LEDR[9:0], SW[9:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], H
     wire [7:0] HEX0OUT2;
     wire [7:0] LEDROUT2;
 
+    wire [7:0] HEX5OUT3;
+    wire [7:0] HEX4OUT3;
+    wire [7:0] HEX3OUT3;
+    wire [7:0] HEX2OUT3;
+    wire [7:0] HEX1OUT3;
+    wire [7:0] HEX0OUT3;
+    wire [7:0] LEDROUT3;
+
     inout carryout;
     output reg overflow;
     output reg [3:0] input1;
@@ -61,15 +69,21 @@ module Lab1_top(LEDR[9:0], SW[9:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], H
                 HEX1 = HEX1OUT2;
                 HEX0 = HEX0OUT2;
             end
-            /*if(SW[9] == 1'b1)
+            if(SW[9] == 1'b1)
             begin
-                
-            end*/
+                LEDR[7:0] = LEDROUT3[7:0];
+                HEX5 = HEX5OUT3;
+                HEX4 = HEX4OUT3;
+                HEX3 = HEX3OUT3;
+                HEX2 = HEX2OUT3;
+                HEX1 = HEX1OUT3;
+                HEX0 = HEX0OUT3;
+            end
         end
 
     Design1_top u0 (LEDROUT[7:0], SW[7:0], KEY[1:0], HEX5OUT[7:0], HEX4OUT[7:0], HEX3OUT[7:0], HEX2OUT[7:0], HEX1OUT[7:0], HEX0OUT[7:0]);
     Design2_top u1 (SW[7:0], LEDROUT2[7:0], KEY[1:0], HEX5OUT2[7:0], HEX4OUT2[7:0], HEX3OUT2[7:0], HEX2OUT2[7:0], HEX1OUT2[7:0], HEX0OUT2[7:0], sum[3:0], carryout, overflow, input1, input2, input3);
-    //Design3_top u2 ();
+    Design3_top u2 (LEDROUT3[2:0], SW[9:0], KEY[1:0], HEX5OUT3[7:0], HEX4OUT3[7:0], HEX3OUT3[7:0], HEX2OUT3[7:0], HEX1OUT3[7:0], HEX0OUT3[7:0]);
     
     
 

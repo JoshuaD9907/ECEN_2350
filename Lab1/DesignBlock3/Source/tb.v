@@ -2,9 +2,8 @@
 
 module tb();
 
-  wire [7:0] LEDR;
-  reg [7:0] SWITCH;
-  reg [1:0] KEY;
+  wire [9:0] LEDR;
+  reg [9:0] SWITCH;
 
   wire [7:0] HEX0;
   wire [7:0] HEX1;
@@ -13,14 +12,9 @@ module tb();
   wire [7:0] HEX4;
   wire [7:0] HEX5;
 
-led_switch led_switch_inst(
-	.LEDR(LEDR) ,	// output [7:0] LEDR_sig
-	.SW(SWITCH) ,	// input [7:0] SW_sig
-	.KEY(KEY) 	// input [1:0] KEY_sig
-);
-
-sevensegcall sevensegcall_inst(
-	.KEY(KEY) ,	
+sevenseg sevenseg_inst(
+  .LEDR(LEDR) ,	// output [7:0] LEDR_sig
+  .SW(SWITCH),
 	.HEX0(HEX0) ,
   .HEX1(HEX1) ,
   .HEX2(HEX2) ,
@@ -33,36 +27,86 @@ sevensegcall sevensegcall_inst(
 	  begin
 		$dumpfile("output.vcd");
 		$dumpvars;
-		$display("Starting led switch simulation");
-                assign SWITCH[7:0] = 8'b0000_0000;
-        $display("All zero inputs");
-        #10	$display("%b", LEDR);
-        $display("Press Button");
-        #10     assign KEY[0] = 1'b1;
-        #10	$display("%b", LEDR);
-        $display("Input 01101010");
-        assign SWITCH[7:0] = 8'b0110_1010;
-        #10	$display("%b", LEDR);
-	    #10	$display("Ending led switch imulation.");
-      $display("--------------------------------------------------");
-      $display("Starting sevenseg simulation");
-        $display("bday 1");
-        #10 assign KEY[1] = 1'b0;
+      $display("Starting simulation");
+        $display("Input: Binary 4 and 4");
+        $display("7 Segment displays (Left to Right)");
+        #10 assign SWITCH = 10'b0001000100;
         #10 $display("%b", HEX5);
         #10 $display("%b", HEX4);
         #10 $display("%b", HEX3);
         #10 $display("%b", HEX2);
         #10 $display("%b", HEX1);
         #10 $display("%b", HEX0);
-        $display("bday 2");
-        #10 assign KEY[1] = 1'b1;
+        $display("LEDs (Left to Right)");
+        #10 $display("%b", LEDR[2]);
+        #10 $display("%b", LEDR[1]);
+        #10 $display("%b", LEDR[0]);
+        $display("Input: Binary 1 and 4");
+        $display("7 Segment displays (Left to Right)");
+        #10 assign SWITCH = 10'b0000010100;
         #10 $display("%b", HEX5);
         #10 $display("%b", HEX4);
         #10 $display("%b", HEX3);
         #10 $display("%b", HEX2);
         #10 $display("%b", HEX1);
         #10 $display("%b", HEX0);
-      #10	$display("Ending sevenseg simulation.");
+        $display("LEDs (Left to Right)");
+        #10 $display("%b", LEDR[2]);
+        #10 $display("%b", LEDR[1]);
+        #10 $display("%b", LEDR[0]);
+        $display("Input: Binary 7 and 2");
+        $display("7 Segment displays (Left to Right)");
+        #10 assign SWITCH = 10'b0001110010;
+        #10 $display("%b", HEX5);
+        #10 $display("%b", HEX4);
+        #10 $display("%b", HEX3);
+        #10 $display("%b", HEX2);
+        #10 $display("%b", HEX1);
+        #10 $display("%b", HEX0);
+        $display("LEDs (Left to Right)");
+        #10 $display("%b", LEDR[2]);
+        #10 $display("%b", LEDR[1]);
+        #10 $display("%b", LEDR[0]);
+      #10	$display("Ending simulation.");
+      $display("Input: 2s Compliment: -4 and -4");
+        $display("7 Segment displays (Left to Right)");
+        #10 assign SWITCH = 10'b1111001100;
+        #10 $display("%b", HEX5);
+        #10 $display("%b", HEX4);
+        #10 $display("%b", HEX3);
+        #10 $display("%b", HEX2);
+        #10 $display("%b", HEX1);
+        #10 $display("%b", HEX0);
+        $display("LEDs (Left to Right)");
+        #10 $display("%b", LEDR[2]);
+        #10 $display("%b", LEDR[1]);
+        #10 $display("%b", LEDR[0]);
+        $display("Input: 2s Compliment: 7 and -4");
+        $display("7 Segment displays (Left to Right)");
+        #10 assign SWITCH = 10'b1101111100;
+        #10 $display("%b", HEX5);
+        #10 $display("%b", HEX4);
+        #10 $display("%b", HEX3);
+        #10 $display("%b", HEX2);
+        #10 $display("%b", HEX1);
+        #10 $display("%b", HEX0);
+        $display("LEDs (Left to Right)");
+        #10 $display("%b", LEDR[2]);
+        #10 $display("%b", LEDR[1]);
+        #10 $display("%b", LEDR[0]);
+        $display("Input: 2s Compliment: -4 and -8");
+        $display("7 Segment displays (Left to Right)");
+        #10 assign SWITCH = 10'b1111001000;
+        #10 $display("%b", HEX5);
+        #10 $display("%b", HEX4);
+        #10 $display("%b", HEX3);
+        #10 $display("%b", HEX2);
+        #10 $display("%b", HEX1);
+        #10 $display("%b", HEX0);
+        $display("LEDs (Left to Right)");
+        #10 $display("%b", LEDR[2]);
+        #10 $display("%b", LEDR[1]);
+        #10 $display("%b", LEDR[0]);
 			$finish;
 	  end
 

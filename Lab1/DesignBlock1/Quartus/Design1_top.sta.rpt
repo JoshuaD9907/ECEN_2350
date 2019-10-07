@@ -1,5 +1,5 @@
 Timing Analyzer report for Design1_top
-Sun Oct 06 14:32:20 2019
+Sun Oct 06 18:43:58 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -87,15 +87,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
-; Maximum used               ; 4           ;
+; Average used               ; 1.03        ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.3%      ;
+;     Processors 2-6         ;   0.6%      ;
 +----------------------------+-------------+
 
 
@@ -104,7 +104,7 @@ refer to the applicable agreement for further details.
 +-----------------+--------+--------------------------+
 ; SDC File Path   ; Status ; Read at                  ;
 +-----------------+--------+--------------------------+
-; Design1_top.SDC ; OK     ; Sun Oct 06 14:32:17 2019 ;
+; Design1_top.SDC ; OK     ; Sun Oct 06 18:43:56 2019 ;
 +-----------------+--------+--------------------------+
 
 
@@ -555,9 +555,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 10    ; 10   ;
-; Unconstrained Input Port Paths  ; 22    ; 22   ;
-; Unconstrained Output Ports      ; 14    ; 14   ;
-; Unconstrained Output Port Paths ; 22    ; 22   ;
+; Unconstrained Input Port Paths  ; 42    ; 42   ;
+; Unconstrained Output Ports      ; 34    ; 34   ;
+; Unconstrained Output Port Paths ; 42    ; 42   ;
 +---------------------------------+-------+------+
 
 
@@ -584,12 +584,32 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; HEX2[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX2[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX2[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX2[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[7]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX4[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX4[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -624,12 +644,32 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; HEX2[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX2[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX2[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX2[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[7]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX4[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX4[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -647,23 +687,23 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Oct 06 14:32:16 2019
+    Info: Processing started: Sun Oct 06 18:43:55 2019
 Info: Command: quartus_sta Design1_top -c Design1_top
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'Design1_top.SDC'
-Warning (332174): Ignored filter at Design1_top.sdc(9): ADC_CLK_10 could not be matched with a port File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 9
-Warning (332049): Ignored create_clock at Design1_top.sdc(9): Argument <targets> is an empty collection File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 9
-    Info (332050): create_clock -period "10.0 MHz" [get_ports ADC_CLK_10] File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 9
-Warning (332174): Ignored filter at Design1_top.sdc(10): MAX10_CLK1_50 could not be matched with a port File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 10
-Warning (332049): Ignored create_clock at Design1_top.sdc(10): Argument <targets> is an empty collection File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 10
-    Info (332050): create_clock -period "50.0 MHz" [get_ports MAX10_CLK1_50] File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 10
-Warning (332174): Ignored filter at Design1_top.sdc(11): MAX10_CLK2_50 could not be matched with a port File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 11
-Warning (332049): Ignored create_clock at Design1_top.sdc(11): Argument <targets> is an empty collection File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 11
-    Info (332050): create_clock -period "50.0 MHz" [get_ports MAX10_CLK2_50] File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 11
+Warning (332174): Ignored filter at Design1_top.sdc(9): ADC_CLK_10 could not be matched with a port File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 9
+Warning (332049): Ignored create_clock at Design1_top.sdc(9): Argument <targets> is an empty collection File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 9
+    Info (332050): create_clock -period "10.0 MHz" [get_ports ADC_CLK_10] File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 9
+Warning (332174): Ignored filter at Design1_top.sdc(10): MAX10_CLK1_50 could not be matched with a port File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 10
+Warning (332049): Ignored create_clock at Design1_top.sdc(10): Argument <targets> is an empty collection File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 10
+    Info (332050): create_clock -period "50.0 MHz" [get_ports MAX10_CLK1_50] File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 10
+Warning (332174): Ignored filter at Design1_top.sdc(11): MAX10_CLK2_50 could not be matched with a port File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 11
+Warning (332049): Ignored create_clock at Design1_top.sdc(11): Argument <targets> is an empty collection File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 11
+    Info (332050): create_clock -period "50.0 MHz" [get_ports MAX10_CLK2_50] File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock1/Quartus/Design1_top.sdc Line: 11
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -705,9 +745,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Sun Oct 06 14:32:20 2019
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 4851 megabytes
+    Info: Processing ended: Sun Oct 06 18:43:58 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

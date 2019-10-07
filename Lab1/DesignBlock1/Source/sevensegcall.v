@@ -15,9 +15,9 @@ module sevensegcall (HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, KEY);
     integer bday1_6=0;
 
     integer bday2_1=0;
-    integer bday2_2=8;
+    integer bday2_2=7;
     integer bday2_3=0;
-    integer bday2_4=7;
+    integer bday2_4=8;
     integer bday2_5=0;
     integer bday2_6=0;
 

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/DesignBlock1/Quartus/") File("Design1_top.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock1/Quartus/") File("Design1_top.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

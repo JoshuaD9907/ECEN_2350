@@ -1,19 +1,13 @@
-module fullAdder(sum, carryIn, carryOut, inputx, inputy);
-    output sum;
-    input carryIn;
-    output carryOut;
-    input inputx;
-    input inputy;
+module fullAdder(inputx, inputy, carryin, carryout);
+    input inputx, inputy, carryin;
+    output carryout, sum;
+
+    wire w1, w2, w3;
     
-    wire w1;
-    wire w2;
-    wire w3;
-    wire w4;
-    
-    xor(w1, inputx, inputy);
-    xor(sum, carryIn, w1);
-    and(w2, inputx, inputy);   
-    and(w3, inputx, carryIn);
-    and(w4, inputy, carryIn);   
-    or(carryOut, w2, w3, w4);
+    and(w1, inputx, inputy);
+	and(w2, inputx, carryin);
+	and(w3, inputy, carryin);
+	or(carryout, w1, w2, w3);
+	xor(sum, inputx, inputy, carryin);
+
 endmodule 

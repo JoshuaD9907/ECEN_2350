@@ -1,4 +1,4 @@
-module sevenseg (data, data2, display);
+module secondsevenseg (data, data2, display);
 input [3:0] data;
 input [3:0] data2;
 output reg [7:0] display;

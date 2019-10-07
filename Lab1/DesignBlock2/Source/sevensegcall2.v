@@ -75,10 +75,10 @@ module sevensegcall2 (HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, input1, input2, sum, o
         end
     end
 
-    sevenseg2 a0(val5, state, HEX5);
-    sevenseg2 a1(val4, var, HEX4);
-    sevenseg2 a2(val3, state, HEX3);
-    sevenseg2 a3(val2, var, HEX2);
-    sevenseg2 a4(val1, state, HEX1);
-    sevenseg2 a5(val0, vars, HEX0);
+    secondsevenseg a0(val5, state, HEX5);
+    secondsevenseg a1(val4, var, HEX4);
+    secondsevenseg a2(val3, state, HEX3);
+    secondsevenseg a3(val2, var, HEX2);
+    secondsevenseg a4(val1, state, HEX1);
+    secondsevenseg a5(val0, vars, HEX0);
 endmodule

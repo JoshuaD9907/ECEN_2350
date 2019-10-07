@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab1_top
-Mon Oct 07 14:12:03 2019
+Mon Oct 07 15:17:36 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -54,13 +54,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 07 14:12:03 2019       ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 07 15:17:36 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab1_top                                    ;
 ; Top-level Entity Name              ; Lab1_top                                    ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 185                                         ;
-;     Total combinational functions  ; 185                                         ;
+; Total logic elements               ; 183                                         ;
+;     Total combinational functions  ; 183                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 88                                          ;
@@ -200,16 +200,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 185         ;
+; Estimated Total logic elements              ; 183         ;
 ;                                             ;             ;
-; Total combinational functions               ; 185         ;
+; Total combinational functions               ; 183         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 129         ;
-;     -- 3 input functions                    ; 40          ;
-;     -- <=2 input functions                  ; 16          ;
+;     -- 4 input functions                    ; 123         ;
+;     -- 3 input functions                    ; 45          ;
+;     -- <=2 input functions                  ; 15          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 185         ;
+;     -- normal mode                          ; 183         ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
 ; Total registers                             ; 0           ;
@@ -222,8 +222,8 @@ refer to the applicable agreement for further details.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; SW[9]~input ;
 ; Maximum fan-out                             ; 47          ;
-; Total fan-out                               ; 815         ;
-; Average fan-out                             ; 2.25        ;
+; Total fan-out                               ; 804         ;
+; Average fan-out                             ; 2.23        ;
 +---------------------------------------------+-------------+
 
 
@@ -232,19 +232,19 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                    ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------+---------------+--------------+
-; |Lab1_top                  ; 185 (73)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 88   ; 0            ; 0          ; |Lab1_top                                              ; Lab1_top      ; work         ;
+; |Lab1_top                  ; 183 (73)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 88   ; 0            ; 0          ; |Lab1_top                                              ; Lab1_top      ; work         ;
 ;    |Design2_top:u1|        ; 45 (2)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design2_top:u1                               ; Design2_top   ; work         ;
 ;       |fullAdder:U0|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design2_top:u1|fullAdder:U0                  ; fullAdder     ; work         ;
 ;       |fullAdder:U1|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design2_top:u1|fullAdder:U1                  ; fullAdder     ; work         ;
 ;       |fullAdder:U2|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design2_top:u1|fullAdder:U2                  ; fullAdder     ; work         ;
 ;       |fullAdder:U3|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design2_top:u1|fullAdder:U3                  ; fullAdder     ; work         ;
 ;       |sevensegcall2:U4|   ; 35 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design2_top:u1|sevensegcall2:U4              ; sevensegcall2 ; work         ;
-;          |sevenseg2:a1|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design2_top:u1|sevensegcall2:U4|sevenseg2:a1 ; sevenseg2     ; work         ;
-;          |sevenseg2:a3|    ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design2_top:u1|sevensegcall2:U4|sevenseg2:a3 ; sevenseg2     ; work         ;
+;          |sevenseg2:a1|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design2_top:u1|sevensegcall2:U4|sevenseg2:a1 ; sevenseg2     ; work         ;
+;          |sevenseg2:a3|    ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design2_top:u1|sevensegcall2:U4|sevenseg2:a3 ; sevenseg2     ; work         ;
 ;          |sevenseg2:a5|    ; 29 (29)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design2_top:u1|sevensegcall2:U4|sevenseg2:a5 ; sevenseg2     ; work         ;
-;    |Design3_top:u2|        ; 67 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design3_top:u2                               ; Design3_top   ; work         ;
-;       |sevensegcall3:U0|   ; 67 (53)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design3_top:u2|sevensegcall3:U0              ; sevensegcall3 ; work         ;
-;          |sevenseg3:a1|    ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design3_top:u2|sevensegcall3:U0|sevenseg3:a1 ; sevenseg3     ; work         ;
+;    |Design3_top:u2|        ; 65 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design3_top:u2                               ; Design3_top   ; work         ;
+;       |sevensegcall3:U0|   ; 65 (53)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design3_top:u2|sevensegcall3:U0              ; sevensegcall3 ; work         ;
+;          |sevenseg3:a1|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design3_top:u2|sevensegcall3:U0|sevenseg3:a1 ; sevenseg3     ; work         ;
 ;          |sevenseg3:a3|    ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab1_top|Design3_top:u2|sevensegcall3:U0|sevenseg3:a3 ; sevenseg3     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -299,11 +299,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Lab1_top|LEDR                                    ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Lab1_top|HEX2                                    ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Lab1_top|HEX5                                    ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |Lab1_top|HEX4                                    ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Lab1_top|Design3_top:u2|sevensegcall3:U0|LEDR[0] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Lab1_top|LEDR                                    ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Lab1_top|HEX2                                    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Lab1_top|HEX1                                    ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |Lab1_top|HEX1                                    ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Lab1_top|Design3_top:u2|sevensegcall3:U0|LEDR[1] ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Lab1_top|LEDR                                    ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Lab1_top|HEX2                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
@@ -350,60 +351,67 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------+
-; Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a5" ;
-+------+-------+----------+----------------------------------------------+
-; Port ; Type  ; Severity ; Details                                      ;
-+------+-------+----------+----------------------------------------------+
-; data ; Input ; Info     ; Stuck at GND                                 ;
-+------+-------+----------+----------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a5"                                                                                                                                             ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; data[7..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------+
-; Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a4" ;
-+------+-------+----------+----------------------------------------------+
-; Port ; Type  ; Severity ; Details                                      ;
-+------+-------+----------+----------------------------------------------+
-; data ; Input ; Info     ; Stuck at GND                                 ;
-+------+-------+----------+----------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a4"                                                                                                                                             ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; data[7..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------+
-; Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a3" ;
-+-------------+-------+----------+---------------------------------------+
-; Port        ; Type  ; Severity ; Details                               ;
-+-------------+-------+----------+---------------------------------------+
-; data[31..3] ; Input ; Info     ; Stuck at GND                          ;
-; data[1]     ; Input ; Info     ; Stuck at VCC                          ;
-+-------------+-------+----------+---------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a3"                                                                                                                                             ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; data[7..4] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; data[2]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; data[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------+
-; Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a2" ;
-+------+-------+----------+----------------------------------------------+
-; Port ; Type  ; Severity ; Details                                      ;
-+------+-------+----------+----------------------------------------------+
-; data ; Input ; Info     ; Stuck at GND                                 ;
-+------+-------+----------+----------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a2"                                                                                                                                             ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; data[7..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------+
-; Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a1" ;
-+-------------+-------+----------+---------------------------------------+
-; Port        ; Type  ; Severity ; Details                               ;
-+-------------+-------+----------+---------------------------------------+
-; data[31..4] ; Input ; Info     ; Stuck at GND                          ;
-; data[2]     ; Input ; Info     ; Stuck at GND                          ;
-+-------------+-------+----------+---------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a1"                                                                                                                                             ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; data[1..0] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; data[7..3] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------+
-; Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a0" ;
-+------+-------+----------+----------------------------------------------+
-; Port ; Type  ; Severity ; Details                                      ;
-+------+-------+----------+----------------------------------------------+
-; data ; Input ; Info     ; Stuck at GND                                 ;
-+------+-------+----------+----------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Design1_top:u0|sevensegcall:U1|sevenseg:a0"                                                                                                                                             ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; data[7..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -413,16 +421,16 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; boundary_port         ; 88                          ;
 ; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 193                         ;
-;     normal            ; 193                         ;
+; cycloneiii_lcell_comb ; 192                         ;
+;     normal            ; 192                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 16                          ;
-;         3 data inputs ; 40                          ;
-;         4 data inputs ; 129                         ;
+;         1 data inputs ; 8                           ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 45                          ;
+;         4 data inputs ; 123                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 5.21                        ;
+; Average LUT depth     ; 5.16                        ;
 +-----------------------+-----------------------------+
 
 
@@ -441,7 +449,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Oct 07 14:11:47 2019
+    Info: Processing started: Mon Oct 07 15:17:19 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab1_top -c Lab1_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -497,8 +505,8 @@ Warning (10235): Verilog HDL Always Construct warning at Lab1_top.v(84): variabl
 Warning (10235): Verilog HDL Always Construct warning at Lab1_top.v(85): variable "HEX1OUT3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 85
 Warning (10235): Verilog HDL Always Construct warning at Lab1_top.v(86): variable "HEX0OUT3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 86
 Info (12128): Elaborating entity "Design1_top" for hierarchy "Design1_top:u0" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 90
-Info (12128): Elaborating entity "led_switch" for hierarchy "Design1_top:u0|led_switch:U0" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design1_top.v Line: 12
-Info (12128): Elaborating entity "sevensegcall" for hierarchy "Design1_top:u0|sevensegcall:U1" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design1_top.v Line: 13
+Info (12128): Elaborating entity "led_switch" for hierarchy "Design1_top:u0|led_switch:U0" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design1_top.v Line: 11
+Info (12128): Elaborating entity "sevensegcall" for hierarchy "Design1_top:u0|sevensegcall:U1" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design1_top.v Line: 12
 Warning (10235): Verilog HDL Always Construct warning at sevensegcall.v(35): variable "bday1_1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall.v Line: 35
 Warning (10235): Verilog HDL Always Construct warning at sevensegcall.v(36): variable "bday1_2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall.v Line: 36
 Warning (10235): Verilog HDL Always Construct warning at sevensegcall.v(37): variable "bday1_3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall.v Line: 37
@@ -710,7 +718,6 @@ Info (10041): Inferred latch for "bday1[29]" at sevensegcall.v(42) File: C:/User
 Info (10041): Inferred latch for "bday1[30]" at sevensegcall.v(42) File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall.v Line: 42
 Info (10041): Inferred latch for "bday1[31]" at sevensegcall.v(42) File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall.v Line: 42
 Info (12128): Elaborating entity "sevenseg" for hierarchy "Design1_top:u0|sevensegcall:U1|sevenseg:a0" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall.v Line: 53
-Warning (10762): Verilog HDL Case Statement warning at sevenseg.v(7): can't check case statement for completeness because the case expression has too many possible states File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevenseg.v Line: 7
 Info (12128): Elaborating entity "Design2_top" for hierarchy "Design2_top:u1" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 91
 Warning (10230): Verilog HDL assignment warning at Design2_top.v(22): truncated value with size 10 to match size of target (8) File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design2_top.v Line: 22
 Info (12128): Elaborating entity "fullAdder" for hierarchy "Design2_top:u1|fullAdder:U0" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design2_top.v Line: 54
@@ -786,7 +793,7 @@ Warning (14026): LATCH primitive "Design2_top:u1|sevensegcall2:U4|val0[0]" is pe
 Warning (14026): LATCH primitive "Design2_top:u1|sevensegcall2:U4|val0[1]" is permanently enabled File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall2.v Line: 70
 Warning (14026): LATCH primitive "Design2_top:u1|sevensegcall2:U4|val0[2]" is permanently enabled File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall2.v Line: 70
 Warning (14026): LATCH primitive "Design2_top:u1|sevensegcall2:U4|val0[3]" is permanently enabled File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall2.v Line: 70
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
     Warning (13035): Inserted always-enabled tri-state buffer between "carryout" and its non-tri-state driver. File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 42
 Warning (13009): TRI or OPNDRN buffers permanently enabled
@@ -814,15 +821,15 @@ Warning (21074): Design contains 12 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "input3[1]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 16
     Warning (15610): No output dependent on input pin "input3[2]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 16
     Warning (15610): No output dependent on input pin "input3[3]" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 16
-Info (21057): Implemented 273 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 271 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 24 input pins
     Info (21059): Implemented 63 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 185 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 91 warnings
-    Info: Peak virtual memory: 4776 megabytes
-    Info: Processing ended: Mon Oct 07 14:12:03 2019
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:32
+    Info (21061): Implemented 183 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 90 warnings
+    Info: Peak virtual memory: 4777 megabytes
+    Info: Processing ended: Mon Oct 07 15:17:36 2019
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:35
 
 

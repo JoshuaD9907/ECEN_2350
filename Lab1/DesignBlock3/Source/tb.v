@@ -2,19 +2,19 @@
 
 module tb();
 
-  wire [9:0] LEDR;
+  output wire [9:0] LEDR;
   reg [9:0] SW;
   reg [1:0] KEY;
-  wire [3:0] input1;
-  wire [3:0] input2;
-  wire [3:0] select;
+  input wire [3:0] input1;
+  input wire [3:0] input2;
+  input wire [3:0] select;
 
-  wire [7:0] HEX0;
-  wire [7:0] HEX1;
-  wire [7:0] HEX2;
-  wire [7:0] HEX3;
-  wire [7:0] HEX4;
-  wire [7:0] HEX5;
+  output wire [7:0] HEX0;
+  output wire [7:0] HEX1;
+  output wire [7:0] HEX2;
+  output wire [7:0] HEX3;
+  output wire [7:0] HEX4;
+  output wire [7:0] HEX5;
 
 sevensegcall3 sevensegcall3_inst
 (

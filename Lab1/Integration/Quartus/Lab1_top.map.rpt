@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab1_top
-Mon Oct 07 02:09:39 2019
+Mon Oct 07 09:27:29 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Oct 07 02:09:39 2019           ;
+; Analysis & Synthesis Status        ; Failed - Mon Oct 07 09:27:29 2019           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab1_top                                    ;
 ; Top-level Entity Name              ; Lab1_top                                    ;
@@ -163,32 +163,40 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Oct 07 02:09:26 2019
+    Info: Processing started: Mon Oct 07 09:27:16 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab1_top -c Lab1_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/joshua hp/documents/github/ecen_2350/lab1/integration/source/sevensegcall3.v
+    Info (12023): Found entity 1: sevensegcall3 File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall3.v Line: 1
 Warning (10463): Verilog HDL Declaration warning at sevensegcall2.v(18): "var" is SystemVerilog-2005 keyword File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall2.v Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file /users/joshua hp/documents/github/ecen_2350/lab1/integration/source/sevensegcall2.v
     Info (12023): Found entity 1: sevensegcall2 File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /users/joshua hp/documents/github/ecen_2350/lab1/integration/source/sevensegcall.v
     Info (12023): Found entity 1: sevensegcall File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevensegcall.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/joshua hp/documents/github/ecen_2350/lab1/integration/source/sevenseg3.v
+    Info (12023): Found entity 1: sevenseg File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevenseg3.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /users/joshua hp/documents/github/ecen_2350/lab1/integration/source/sevenseg2.v
-    Info (12023): Found entity 1: sevenseg File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevenseg2.v Line: 1
+    Info (12023): Found entity 1: sevenseg2 File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevenseg2.v Line: 1
 Error (10228): Verilog HDL error at sevenseg.v(1): module "sevenseg" cannot be declared more than once File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevenseg.v Line: 1
-Info (10499): HDL info at sevenseg2.v(1): see declaration for object "sevenseg" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevenseg2.v Line: 1
+Info (10499): HDL info at sevenseg3.v(1): see declaration for object "sevenseg" File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/sevenseg3.v Line: 1
 Info (12021): Found 0 design units, including 0 entities, in source file /users/joshua hp/documents/github/ecen_2350/lab1/integration/source/sevenseg.v
 Info (12021): Found 1 design units, including 1 entities, in source file /users/joshua hp/documents/github/ecen_2350/lab1/integration/source/led_switch.v
     Info (12023): Found entity 1: led_switch File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/led_switch.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /users/joshua hp/documents/github/ecen_2350/lab1/integration/source/lab1_top.v
     Info (12023): Found entity 1: Lab1_top File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Lab1_top.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/joshua hp/documents/github/ecen_2350/lab1/integration/source/fulladder.v
+    Info (12023): Found entity 1: fullAdder File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/fullAdder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/joshua hp/documents/github/ecen_2350/lab1/integration/source/design3_top.v
+    Info (12023): Found entity 1: Design3_top File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design3_top.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /users/joshua hp/documents/github/ecen_2350/lab1/integration/source/design2_top.v
     Info (12023): Found entity 1: Design2_top File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design2_top.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /users/joshua hp/documents/github/ecen_2350/lab1/integration/source/design1_top.v
     Info (12023): Found entity 1: Design1_top File: C:/Users/Joshua HP/Documents/GitHub/ECEN_2350/Lab1/Integration/Source/Design1_top.v Line: 1
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 2 warnings
     Error: Peak virtual memory: 4725 megabytes
-    Error: Processing ended: Mon Oct 07 02:09:39 2019
+    Error: Processing ended: Mon Oct 07 09:27:29 2019
     Error: Elapsed time: 00:00:13
-    Error: Total CPU time (on all processors): 00:00:29
+    Error: Total CPU time (on all processors): 00:00:30
 
 

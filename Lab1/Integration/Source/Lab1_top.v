@@ -8,6 +8,12 @@ module Lab1_top(LEDR[9:0], SW[9:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], H
     output reg [7:0] HEX1;
     output reg [7:0] HEX0;
     output reg [9:0] LEDR;
+    output sum[3:0];
+    /*output carryout;
+    output overflow;*/
+    output reg [3:0] input1;
+    output reg [3:0] input2;
+    output reg [3:0] input3;
 
     wire [7:0] HEX5OUT;
     wire [7:0] HEX4OUT;
@@ -35,9 +41,9 @@ module Lab1_top(LEDR[9:0], SW[9:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], H
 
     inout carryout;
     output reg overflow;
-    output reg [3:0] input1;
-    output reg [3:0] input2;
-    output reg [3:0] input3;
+    //reg [3:0] input1;
+    //reg [3:0] input2;
+    //reg [3:0] input3;
 
     always @ (SW[9:8])
         begin

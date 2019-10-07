@@ -1,5 +1,5 @@
 module sevenseg (data, display);
-input [7:0] data;
+input [31:0] data;
 output reg [7:0] display;
 always @ (data)
    begin

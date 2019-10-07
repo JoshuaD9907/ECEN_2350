@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Design2
-Mon Oct 07 00:42:58 2019
+Mon Oct 07 00:50:20 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -47,7 +47,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 07 00:42:58 2019       ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 07 00:50:20 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Design2                                     ;
 ; Top-level Entity Name              ; Design2_top                                 ;
@@ -317,7 +317,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Oct 07 00:42:49 2019
+    Info: Processing started: Mon Oct 07 00:50:11 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Design2 -c Design2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -330,31 +330,33 @@ Info (12021): Found 1 design units, including 1 entities, in source file /digita
     Info (12023): Found entity 1: fullAdder File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/fullAdder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /digitallogic/ecen_2350/lab1/designblock2/source/design2_top.v
     Info (12023): Found entity 1: Design2_top File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at Design2_top.v(28): created implicit net for "carry" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 28
-Warning (10236): Verilog HDL Implicit Net warning at Design2_top.v(46): created implicit net for "input1" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 46
-Warning (10236): Verilog HDL Implicit Net warning at Design2_top.v(46): created implicit net for "input2" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at Design2_top.v(29): created implicit net for "carry" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 29
+Warning (10236): Verilog HDL Implicit Net warning at Design2_top.v(47): created implicit net for "input1" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 47
+Warning (10236): Verilog HDL Implicit Net warning at Design2_top.v(47): created implicit net for "input2" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 47
 Info (12127): Elaborating entity "Design2_top" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Design2_top.v(28): object "carry" assigned a value but never read File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 28
+Warning (10036): Verilog HDL or VHDL warning at Design2_top.v(29): object "carry" assigned a value but never read File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 29
 Warning (10030): Net "SW" at Design2_top.v(10) has no driver or initial value, using a default initial value '0' File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 10
-Info (12128): Elaborating entity "fullAdder" for hierarchy "fullAdder:U0" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 42
-Info (12128): Elaborating entity "sevensegcall2" for hierarchy "sevensegcall2:U4" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 46
+Info (12128): Elaborating entity "fullAdder" for hierarchy "fullAdder:U0" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 43
+Info (12128): Elaborating entity "sevensegcall2" for hierarchy "sevensegcall2:U4" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 47
 Warning (10240): Verilog HDL Always Construct warning at sevensegcall2.v(27): inferring latch(es) for variable "val5", which holds its previous value in one or more paths through the always construct File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 27
-Warning (10240): Verilog HDL Always Construct warning at sevensegcall2.v(39): inferring latch(es) for variable "val3", which holds its previous value in one or more paths through the always construct File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 39
-Warning (10240): Verilog HDL Always Construct warning at sevensegcall2.v(51): inferring latch(es) for variable "val1", which holds its previous value in one or more paths through the always construct File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 51
-Warning (10240): Verilog HDL Always Construct warning at sevensegcall2.v(51): inferring latch(es) for variable "val0", which holds its previous value in one or more paths through the always construct File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 51
-Info (10041): Inferred latch for "val0[0]" at sevensegcall2.v(63) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 63
-Info (10041): Inferred latch for "val0[1]" at sevensegcall2.v(63) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 63
-Info (10041): Inferred latch for "val0[2]" at sevensegcall2.v(63) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 63
-Info (10041): Inferred latch for "val0[3]" at sevensegcall2.v(63) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 63
-Info (10041): Inferred latch for "val1[0]" at sevensegcall2.v(63) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 63
-Info (10041): Inferred latch for "val1[1]" at sevensegcall2.v(63) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 63
-Info (10041): Inferred latch for "val1[2]" at sevensegcall2.v(63) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 63
-Info (10041): Inferred latch for "val1[3]" at sevensegcall2.v(63) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 63
-Info (12128): Elaborating entity "sevenseg" for hierarchy "sevensegcall2:U4|sevenseg:a0" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 70
-Warning (14026): LATCH primitive "sevensegcall2:U4|val0[0]" is permanently enabled File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 63
-Warning (14026): LATCH primitive "sevensegcall2:U4|val0[1]" is permanently enabled File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 63
-Warning (14026): LATCH primitive "sevensegcall2:U4|val0[2]" is permanently enabled File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 63
-Warning (14026): LATCH primitive "sevensegcall2:U4|val0[3]" is permanently enabled File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 63
+Warning (10240): Verilog HDL Always Construct warning at sevensegcall2.v(27): inferring latch(es) for variable "val4", which holds its previous value in one or more paths through the always construct File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 27
+Warning (10240): Verilog HDL Always Construct warning at sevensegcall2.v(41): inferring latch(es) for variable "val3", which holds its previous value in one or more paths through the always construct File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 41
+Warning (10240): Verilog HDL Always Construct warning at sevensegcall2.v(41): inferring latch(es) for variable "val2", which holds its previous value in one or more paths through the always construct File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 41
+Warning (10240): Verilog HDL Always Construct warning at sevensegcall2.v(55): inferring latch(es) for variable "val1", which holds its previous value in one or more paths through the always construct File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 55
+Warning (10240): Verilog HDL Always Construct warning at sevensegcall2.v(55): inferring latch(es) for variable "val0", which holds its previous value in one or more paths through the always construct File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 55
+Info (10041): Inferred latch for "val0[0]" at sevensegcall2.v(67) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 67
+Info (10041): Inferred latch for "val0[1]" at sevensegcall2.v(67) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 67
+Info (10041): Inferred latch for "val0[2]" at sevensegcall2.v(67) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 67
+Info (10041): Inferred latch for "val0[3]" at sevensegcall2.v(67) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 67
+Info (10041): Inferred latch for "val1[0]" at sevensegcall2.v(67) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 67
+Info (10041): Inferred latch for "val1[1]" at sevensegcall2.v(67) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 67
+Info (10041): Inferred latch for "val1[2]" at sevensegcall2.v(67) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 67
+Info (10041): Inferred latch for "val1[3]" at sevensegcall2.v(67) File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 67
+Info (12128): Elaborating entity "sevenseg" for hierarchy "sevensegcall2:U4|sevenseg:a0" File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 74
+Warning (14026): LATCH primitive "sevensegcall2:U4|val0[0]" is permanently enabled File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 67
+Warning (14026): LATCH primitive "sevensegcall2:U4|val0[1]" is permanently enabled File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 67
+Warning (14026): LATCH primitive "sevensegcall2:U4|val0[2]" is permanently enabled File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 67
+Warning (14026): LATCH primitive "sevensegcall2:U4|val0[3]" is permanently enabled File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/sevensegcall2.v Line: 67
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "SW[0]" is stuck at GND File: D:/DigitalLogic/ECEN_2350/Lab1/DesignBlock2/Source/Design2_top.v Line: 10
@@ -422,9 +424,9 @@ Info (21057): Implemented 76 device resources after synthesis - the final resour
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 70 output pins
     Info (21061): Implemented 3 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 75 warnings
-    Info: Peak virtual memory: 4771 megabytes
-    Info: Processing ended: Mon Oct 07 00:42:58 2019
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 77 warnings
+    Info: Peak virtual memory: 4772 megabytes
+    Info: Processing ended: Mon Oct 07 00:50:20 2019
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:19
 

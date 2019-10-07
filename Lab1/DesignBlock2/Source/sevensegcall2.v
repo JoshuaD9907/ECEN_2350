@@ -29,10 +29,12 @@ module sevensegcall2 (HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, input1, input2, sum, o
         if(input1[3]==0)
         begin
             val5[3:0]=4'b0001; //blanks
+            val4[3:0]=input1[3:0];
         end
         if(input1[3]==1)
         begin
             val5[3:0]=4'b0100; //minus
+            val4[3:0]=input1[3:0];
         end
     end
 
@@ -41,10 +43,12 @@ module sevensegcall2 (HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, input1, input2, sum, o
         if(input2[3]==0)
         begin
             val3[3:0]=4'b0001;
+            val2[3:0]=input2[3:0];
         end
         if(input2[3]==1)
         begin
             val3[3:0]=4'b0100;
+            val2[3:0]=input2[3:0];
         end
     end
     

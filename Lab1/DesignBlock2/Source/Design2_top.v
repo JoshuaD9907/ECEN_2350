@@ -22,6 +22,7 @@ module Design2_top(SW[7:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], HEX2[7:0]
         if (KEY[0])
         begin
         inputy[3:0] = SW[3:0];
+        inputx[3:0] = SW[7:4];
         end
     end
 

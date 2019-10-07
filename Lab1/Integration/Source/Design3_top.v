@@ -1,4 +1,4 @@
-module Design3_top(LEDR[9:0], SW[9:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], HEX2[7:0], HEX1[7:0], HEX0[7:0], input1, input2, select, LEDR);
+module Design3_top(LEDR[9:0], SW[9:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], HEX2[7:0], HEX1[7:0], HEX0[7:0], input1, input2, select);
     input [9:0] SW;
     input [1:0] KEY;
     output wire [9:0] LEDR;

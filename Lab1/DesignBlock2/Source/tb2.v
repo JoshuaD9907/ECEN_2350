@@ -12,7 +12,7 @@ module tb2();
     wire [7:0] HEX0;
     output [3:0] sum;
     reg [7:0] SW;
-    reg carryout;
+    wire carryout;
     reg carryin;
     output reg overflow;
     output reg [3:0] input1;
@@ -47,7 +47,7 @@ sevensegcall2 sevensegcall2_inst(
 		$dumpvars;
 		$display("Starting adder simulation");
         $display("Input 00100100");
-                assign SWITCH[7:0] = 8'b0010_0100;
+                assign SW[7:0] = 8'b0010_0100;
         $display("All positive inputs");
         #10	$display("%b", input1);
         #10	$display("%b", input2);
@@ -65,7 +65,7 @@ sevensegcall2 sevensegcall2_inst(
       $display("--------------------------------------------------");
       $display("Starting sevenseg simulation");
         $display("Positive inputs and sum");
-        #10 assign SWITCH[7:0]= 8'b0010_0010;
+        #10 assign SW[7:0]= 8'b0010_0010;
         #10 $display("%b", HEX5);
         #10 $display("%b", HEX4);
         #10 $display("%b", HEX3);
@@ -73,7 +73,7 @@ sevensegcall2 sevensegcall2_inst(
         #10 $display("%b", HEX1);
         #10 $display("%b", HEX0);
         $display("Negative and positive inputs and sum");
-        #10 assign SWITCH[7:0]= 8'b1010_0010;
+        #10 assign SW[7:0]= 8'b1010_0010;
         #10 $display("%b", HEX5);
         #10 $display("%b", HEX4);
         #10 $display("%b", HEX3);
@@ -81,7 +81,7 @@ sevensegcall2 sevensegcall2_inst(
         #10 $display("%b", HEX1);
         #10 $display("%b", HEX0);
         $display("Negative inputs and sum");
-        #10 assign SWITCH[7:0]= 8'b1111_1111;
+        #10 assign SW[7:0]= 8'b1111_1111;
         #10 $display("%b", HEX5);
         #10 $display("%b", HEX4);
         #10 $display("%b", HEX3);
@@ -89,7 +89,7 @@ sevensegcall2 sevensegcall2_inst(
         #10 $display("%b", HEX1);
         #10 $display("%b", HEX0);
         $display("Overflow");
-        #10 assign SWITCH[7:0]= 8'b0010_0111;
+        #10 assign SW[7:0]= 8'b0010_0111;
         #10 $display("%b", HEX5);
         #10 $display("%b", HEX4);
         #10 $display("%b", HEX3);
@@ -97,7 +97,7 @@ sevensegcall2 sevensegcall2_inst(
         #10 $display("%b", HEX1);
         #10 $display("%b", HEX0);
         $display("Zero");
-        #10 assign SWITCH[7:0]= 8'b0001_1111;
+        #10 assign SW[7:0]= 8'b0001_1111;
         #10 $display("%b", HEX5);
         #10 $display("%b", HEX4);
         #10 $display("%b", HEX3);
@@ -105,7 +105,7 @@ sevensegcall2 sevensegcall2_inst(
         #10 $display("%b", HEX1);
         #10 $display("%b", HEX0);
         $display("Positive inputs and subtract");
-        #10 assign SWITCH[7:0]= 8'b0010_0001;
+        #10 assign SW[7:0]= 8'b0010_0001;
         #10     assign KEY[0] = 1'b1;
         #10 $display("%b", HEX5);
         #10 $display("%b", HEX4);
@@ -114,7 +114,7 @@ sevensegcall2 sevensegcall2_inst(
         #10 $display("%b", HEX1);
         #10 $display("%b", HEX0);
         $display("Negative and positive inputs and subtract");
-        #10 assign SWITCH[7:0]= 8'b1110_0001;
+        #10 assign SW[7:0]= 8'b1110_0001;
         #10     assign KEY[0] = 1'b1;
         #10 $display("%b", HEX5);
         #10 $display("%b", HEX4);
@@ -123,7 +123,7 @@ sevensegcall2 sevensegcall2_inst(
         #10 $display("%b", HEX1);
         #10 $display("%b", HEX0);
         $display("Negative inputs and subtract");
-        #10 assign SWITCH[7:0]= 8'b1110_1111;
+        #10 assign SW[7:0]= 8'b1110_1111;
         #10     assign KEY[0] = 1'b1;
         #10 $display("%b", HEX5);
         #10 $display("%b", HEX4);
@@ -132,7 +132,7 @@ sevensegcall2 sevensegcall2_inst(
         #10 $display("%b", HEX1);
         #10 $display("%b", HEX0);
         $display("Overflow");
-        #10 assign SWITCH[7:0]= 8'b1000_0111;
+        #10 assign SW[7:0]= 8'b1000_0111;
         #10     assign KEY[0] = 1'b1;
         #10 $display("%b", HEX5);
         #10 $display("%b", HEX4);

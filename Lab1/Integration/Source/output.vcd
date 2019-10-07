@@ -1,0 +1,305 @@
+$date
+	Sun Oct 06 14:31:50 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module Design1_top $end
+$var wire 2 ! KEY [1:0] $end
+$var wire 8 " SW [7:0] $end
+$var wire 8 # LEDR [7:0] $end
+$var wire 8 $ HEX5 [7:0] $end
+$var wire 8 % HEX4 [7:0] $end
+$var wire 8 & HEX3 [7:0] $end
+$var wire 8 ' HEX2 [7:0] $end
+$var wire 8 ( HEX1 [7:0] $end
+$var wire 8 ) HEX0 [7:0] $end
+$scope module U0 $end
+$var wire 2 * KEY [1:0] $end
+$var wire 8 + SW [7:0] $end
+$var reg 8 , LEDR [7:0] $end
+$upscope $end
+$scope module U1 $end
+$var wire 2 - KEY [1:0] $end
+$var wire 8 . HEX5 [7:0] $end
+$var wire 8 / HEX4 [7:0] $end
+$var wire 8 0 HEX3 [7:0] $end
+$var wire 8 1 HEX2 [7:0] $end
+$var wire 8 2 HEX1 [7:0] $end
+$var wire 8 3 HEX0 [7:0] $end
+$var integer 32 4 bday1 [31:0] $end
+$var integer 32 5 bday1_1 [31:0] $end
+$var integer 32 6 bday1_2 [31:0] $end
+$var integer 32 7 bday1_3 [31:0] $end
+$var integer 32 8 bday1_4 [31:0] $end
+$var integer 32 9 bday1_5 [31:0] $end
+$var integer 32 : bday1_6 [31:0] $end
+$var integer 32 ; bday2 [31:0] $end
+$var integer 32 < bday2_1 [31:0] $end
+$var integer 32 = bday2_2 [31:0] $end
+$var integer 32 > bday2_3 [31:0] $end
+$var integer 32 ? bday2_4 [31:0] $end
+$var integer 32 @ bday2_5 [31:0] $end
+$var integer 32 A bday2_6 [31:0] $end
+$var integer 32 B bday3 [31:0] $end
+$var integer 32 C bday4 [31:0] $end
+$var integer 32 D bday5 [31:0] $end
+$var integer 32 E bday6 [31:0] $end
+$scope module a0 $end
+$var wire 32 F data [31:0] $end
+$var reg 8 G display [7:0] $end
+$upscope $end
+$scope module a1 $end
+$var wire 32 H data [31:0] $end
+$var reg 8 I display [7:0] $end
+$upscope $end
+$scope module a2 $end
+$var wire 32 J data [31:0] $end
+$var reg 8 K display [7:0] $end
+$upscope $end
+$scope module a3 $end
+$var wire 32 L data [31:0] $end
+$var reg 8 M display [7:0] $end
+$upscope $end
+$scope module a4 $end
+$var wire 32 N data [31:0] $end
+$var reg 8 O display [7:0] $end
+$upscope $end
+$scope module a5 $end
+$var wire 32 P data [31:0] $end
+$var reg 8 Q display [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module tb $end
+$var wire 8 R LEDR [7:0] $end
+$var wire 8 S HEX5 [7:0] $end
+$var wire 8 T HEX4 [7:0] $end
+$var wire 8 U HEX3 [7:0] $end
+$var wire 8 V HEX2 [7:0] $end
+$var wire 8 W HEX1 [7:0] $end
+$var wire 8 X HEX0 [7:0] $end
+$var reg 2 Y KEY [1:0] $end
+$var reg 8 Z SWITCH [7:0] $end
+$scope module led_switch_inst $end
+$var wire 2 [ KEY [1:0] $end
+$var wire 8 \ SW [7:0] $end
+$var reg 8 ] LEDR [7:0] $end
+$upscope $end
+$scope module sevensegcall_inst $end
+$var wire 2 ^ KEY [1:0] $end
+$var wire 8 _ HEX5 [7:0] $end
+$var wire 8 ` HEX4 [7:0] $end
+$var wire 8 a HEX3 [7:0] $end
+$var wire 8 b HEX2 [7:0] $end
+$var wire 8 c HEX1 [7:0] $end
+$var wire 8 d HEX0 [7:0] $end
+$var integer 32 e bday1 [31:0] $end
+$var integer 32 f bday1_1 [31:0] $end
+$var integer 32 g bday1_2 [31:0] $end
+$var integer 32 h bday1_3 [31:0] $end
+$var integer 32 i bday1_4 [31:0] $end
+$var integer 32 j bday1_5 [31:0] $end
+$var integer 32 k bday1_6 [31:0] $end
+$var integer 32 l bday2 [31:0] $end
+$var integer 32 m bday2_1 [31:0] $end
+$var integer 32 n bday2_2 [31:0] $end
+$var integer 32 o bday2_3 [31:0] $end
+$var integer 32 p bday2_4 [31:0] $end
+$var integer 32 q bday2_5 [31:0] $end
+$var integer 32 r bday2_6 [31:0] $end
+$var integer 32 s bday3 [31:0] $end
+$var integer 32 t bday4 [31:0] $end
+$var integer 32 u bday5 [31:0] $end
+$var integer 32 v bday6 [31:0] $end
+$scope module a0 $end
+$var wire 32 w data [31:0] $end
+$var reg 8 x display [7:0] $end
+$upscope $end
+$scope module a1 $end
+$var wire 32 y data [31:0] $end
+$var reg 8 z display [7:0] $end
+$upscope $end
+$scope module a2 $end
+$var wire 32 { data [31:0] $end
+$var reg 8 | display [7:0] $end
+$upscope $end
+$scope module a3 $end
+$var wire 32 } data [31:0] $end
+$var reg 8 ~ display [7:0] $end
+$upscope $end
+$scope module a4 $end
+$var wire 32 !" data [31:0] $end
+$var reg 8 "" display [7:0] $end
+$upscope $end
+$scope module a5 $end
+$var wire 32 #" data [31:0] $end
+$var reg 8 $" display [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx $"
+bx #"
+bx ""
+bx !"
+bx ~
+bx }
+bx |
+bx {
+bx z
+bx y
+bx x
+bx w
+bx v
+bx u
+bx t
+bx s
+b0 r
+b0 q
+b111 p
+b0 o
+b1000 n
+b0 m
+bx l
+b0 k
+b0 j
+b10 i
+b0 h
+b11 g
+b0 f
+bx e
+bx d
+bx c
+bx b
+bx a
+bx `
+bx _
+bx ^
+b11111111 ]
+b0 \
+bx [
+b0 Z
+bx Y
+bx X
+bx W
+bx V
+bx U
+bx T
+bx S
+b11111111 R
+bx Q
+bx P
+bx O
+bx N
+bx M
+bx L
+bx K
+bx J
+bx I
+bx H
+bx G
+bx F
+bx E
+bx D
+bx C
+bx B
+b0 A
+b0 @
+b111 ?
+b0 >
+b1000 =
+b0 <
+bx ;
+b0 :
+b0 9
+b10 8
+b0 7
+b11 6
+b0 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bz -
+bx ,
+bz +
+bz *
+bx )
+bx (
+bx '
+bx &
+bx %
+bx $
+bx #
+bz "
+bz !
+$end
+#200
+b0 R
+b0 ]
+bx1 Y
+bx1 [
+bx1 ^
+#300
+b1101010 R
+b1101010 ]
+b1101010 Z
+b1101010 \
+#600
+b11000000 X
+b11000000 d
+b11000000 $"
+b11000000 W
+b11000000 c
+b11000000 ""
+b11111000 V
+b11111000 b
+b11111000 ~
+b11000000 U
+b11000000 a
+b11000000 |
+b10000000 T
+b10000000 `
+b10000000 z
+b11000000 S
+b11000000 _
+b11000000 x
+b0 v
+b0 #"
+b0 u
+b0 !"
+b111 t
+b111 }
+b0 s
+b0 {
+b1000 l
+b1000 y
+b0 e
+b0 w
+b1 Y
+b1 [
+b1 ^
+#1300
+b10100100 V
+b10100100 b
+b10100100 ~
+b10110000 T
+b10110000 `
+b10110000 z
+b10 t
+b10 }
+b11 l
+b11 y
+b11 Y
+b11 [
+b11 ^
+#2000

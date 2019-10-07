@@ -1,4 +1,4 @@
-module sevensegcall (HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, KEY);
+module sevensegcall3 (HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, KEY);
     input [1:0] KEY;
     output [7:0] HEX5;
     output [7:0] HEX4;

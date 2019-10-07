@@ -1,0 +1,280 @@
+$date
+	Mon Oct 07 13:28:44 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module Design3_top $end
+$var wire 2 ! KEY [1:0] $end
+$var wire 10 " SW [9:0] $end
+$var wire 10 # LEDR [9:0] $end
+$var wire 8 $ HEX5 [7:0] $end
+$var wire 8 % HEX4 [7:0] $end
+$var wire 8 & HEX3 [7:0] $end
+$var wire 8 ' HEX2 [7:0] $end
+$var wire 8 ( HEX1 [7:0] $end
+$var wire 8 ) HEX0 [7:0] $end
+$var reg 4 * input1 [3:0] $end
+$var reg 4 + input2 [3:0] $end
+$var reg 4 , select [3:0] $end
+$var reg 4 - twos [3:0] $end
+$var reg 4 . unsign [3:0] $end
+$scope module U0 $end
+$var wire 4 / input1 [3:0] $end
+$var wire 4 0 input2 [3:0] $end
+$var wire 4 1 select [3:0] $end
+$var wire 8 2 HEX5 [7:0] $end
+$var wire 8 3 HEX4 [7:0] $end
+$var wire 8 4 HEX3 [7:0] $end
+$var wire 8 5 HEX2 [7:0] $end
+$var wire 8 6 HEX1 [7:0] $end
+$var wire 8 7 HEX0 [7:0] $end
+$var reg 10 8 LEDR [9:0] $end
+$var reg 4 9 blank [3:0] $end
+$var reg 4 : compare1 [3:0] $end
+$var reg 4 ; compare2 [3:0] $end
+$var reg 4 < compare3 [3:0] $end
+$var reg 4 = compare4 [3:0] $end
+$var reg 4 > state [3:0] $end
+$var reg 4 ? val1 [3:0] $end
+$var reg 4 @ val5 [3:0] $end
+$var reg 4 A var [3:0] $end
+$scope module a0 $end
+$var wire 4 B data [3:0] $end
+$var wire 4 C select [3:0] $end
+$var wire 4 D state [3:0] $end
+$var reg 8 E display [7:0] $end
+$upscope $end
+$scope module a1 $end
+$var wire 4 F data [3:0] $end
+$var wire 4 G select [3:0] $end
+$var wire 4 H state [3:0] $end
+$var reg 8 I display [7:0] $end
+$upscope $end
+$scope module a2 $end
+$var wire 4 J data [3:0] $end
+$var wire 4 K select [3:0] $end
+$var wire 4 L state [3:0] $end
+$var reg 8 M display [7:0] $end
+$upscope $end
+$scope module a3 $end
+$var wire 4 N data [3:0] $end
+$var wire 4 O select [3:0] $end
+$var wire 4 P state [3:0] $end
+$var reg 8 Q display [7:0] $end
+$upscope $end
+$scope module a4 $end
+$var wire 4 R data [3:0] $end
+$var wire 4 S select [3:0] $end
+$var wire 4 T state [3:0] $end
+$var reg 8 U display [7:0] $end
+$upscope $end
+$scope module a5 $end
+$var wire 4 V data [3:0] $end
+$var wire 4 W select [3:0] $end
+$var wire 4 X state [3:0] $end
+$var reg 8 Y display [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module tb $end
+$var wire 4 Z input1 [3:0] $end
+$var wire 4 [ input2 [3:0] $end
+$var wire 4 \ select [3:0] $end
+$var wire 10 ] LEDR [9:0] $end
+$var wire 8 ^ HEX5 [7:0] $end
+$var wire 8 _ HEX4 [7:0] $end
+$var wire 8 ` HEX3 [7:0] $end
+$var wire 8 a HEX2 [7:0] $end
+$var wire 8 b HEX1 [7:0] $end
+$var wire 8 c HEX0 [7:0] $end
+$var reg 10 d SW [9:0] $end
+$scope module sevensegcall3_inst $end
+$var wire 4 e input1 [3:0] $end
+$var wire 4 f input2 [3:0] $end
+$var wire 4 g select [3:0] $end
+$var wire 8 h HEX5 [7:0] $end
+$var wire 8 i HEX4 [7:0] $end
+$var wire 8 j HEX3 [7:0] $end
+$var wire 8 k HEX2 [7:0] $end
+$var wire 8 l HEX1 [7:0] $end
+$var wire 8 m HEX0 [7:0] $end
+$var reg 10 n LEDR [9:0] $end
+$var reg 4 o blank [3:0] $end
+$var reg 4 p compare1 [3:0] $end
+$var reg 4 q compare2 [3:0] $end
+$var reg 4 r compare3 [3:0] $end
+$var reg 4 s compare4 [3:0] $end
+$var reg 4 t state [3:0] $end
+$var reg 4 u val1 [3:0] $end
+$var reg 4 v val5 [3:0] $end
+$var reg 4 w var [3:0] $end
+$scope module a0 $end
+$var wire 4 x data [3:0] $end
+$var wire 4 y select [3:0] $end
+$var wire 4 z state [3:0] $end
+$var reg 8 { display [7:0] $end
+$upscope $end
+$scope module a1 $end
+$var wire 4 | data [3:0] $end
+$var wire 4 } select [3:0] $end
+$var wire 4 ~ state [3:0] $end
+$var reg 8 !" display [7:0] $end
+$upscope $end
+$scope module a2 $end
+$var wire 4 "" data [3:0] $end
+$var wire 4 #" select [3:0] $end
+$var wire 4 $" state [3:0] $end
+$var reg 8 %" display [7:0] $end
+$upscope $end
+$scope module a3 $end
+$var wire 4 &" data [3:0] $end
+$var wire 4 '" select [3:0] $end
+$var wire 4 (" state [3:0] $end
+$var reg 8 )" display [7:0] $end
+$upscope $end
+$scope module a4 $end
+$var wire 4 *" data [3:0] $end
+$var wire 4 +" select [3:0] $end
+$var wire 4 ," state [3:0] $end
+$var reg 8 -" display [7:0] $end
+$upscope $end
+$scope module a5 $end
+$var wire 4 ." data [3:0] $end
+$var wire 4 /" select [3:0] $end
+$var wire 4 0" state [3:0] $end
+$var reg 8 1" display [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11000000 1"
+bx 0"
+bz /"
+bx ."
+b11000000 -"
+bx ,"
+bz +"
+bx *"
+b11000000 )"
+bx ("
+bz '"
+bz &"
+b11000000 %"
+bx $"
+bz #"
+bx ""
+b11000000 !"
+bx ~
+bz }
+bz |
+b11000000 {
+bx z
+bz y
+bx x
+bx w
+bx v
+bx u
+bx t
+bx s
+bx r
+bx q
+bx p
+bx o
+bx n
+b11000000 m
+b11000000 l
+b11000000 k
+b11000000 j
+b11000000 i
+b11000000 h
+bz g
+bz f
+bz e
+bx d
+b11000000 c
+b11000000 b
+b11000000 a
+b11000000 `
+b11000000 _
+b11000000 ^
+bx ]
+bz \
+bz [
+bz Z
+bx Y
+bx X
+bx W
+bx V
+bx U
+bx T
+bx S
+bx R
+b11000000 Q
+bx P
+bx O
+bz N
+bx M
+bx L
+bx K
+bx J
+b11000000 I
+bx H
+bx G
+bz F
+bx E
+bx D
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+b11000000 7
+bx 6
+bx 5
+bx 4
+b11000000 3
+bx 2
+bx 1
+bz 0
+bz /
+bx .
+bx -
+bx ,
+bz +
+bz *
+b11000000 )
+bx (
+bx '
+bx &
+b11000000 %
+bx $
+bx #
+bz "
+bz !
+$end
+#100
+b1000100 d
+#1100
+b10100 d
+#2100
+b1110010 d
+#3200
+b1111001100 d
+#4200
+b1101111100 d
+#5200
+b1111001000 d
+#6100

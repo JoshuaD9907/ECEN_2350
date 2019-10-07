@@ -122,6 +122,6 @@ module Design3_top(LEDR[2:0], SW[9:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0]
         end
     end
 
-    sevenseg s1 (input1, HEX4);
-    sevenseg s5 (input2, HEX0);
+    sevenseg3 s1 (input1, HEX4);
+    sevenseg3 s5 (input2, HEX0);
 endmodule

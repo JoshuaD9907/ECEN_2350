@@ -7,7 +7,7 @@ module Design2_top(SW[7:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], HEX2[7:0]
     output [7:0] HEX1;
     output [7:0] HEX0;
     output [3:0] sum;
-    output reg [7:0] SW;
+    input [7:0] SW;
     input carryin;
     output carryout;
     output reg overflow;
@@ -44,6 +44,6 @@ module Design2_top(SW[7:0], KEY[1:0], HEX5[7:0], HEX4[7:0], HEX3[7:0], HEX2[7:0]
     fullAdder U1(inputx[1], inputy[1], carry1, carry2, sum[1]);
     fullAdder U2(inputx[2], inputy[2], carry2, carry3, sum[2]);
     fullAdder U3(inputx[3], inputy[3], carry3, carryout, sum[3]);
-    sevensegcall2 U4 (HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, input1, input2, sum, overflow);
+    sevensegcall2 U4 (HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, inputx, inputy, sum, overflow);
 
 endmodule
